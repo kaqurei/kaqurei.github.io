@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CSS Class vs ID Selectors Transcript | Destyni Shirley | CIT 230</title>
+    <meta name="description" content="CSS Presentation: Class vs ID Selectors Transcript">
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway" rel="stylesheet">
+</head>
+
+<body>
+        <header>
+                <h1>Destyni Shirley - CIT 230</h1>
+        </header>
+
+            <main>
+                    <h2>Class vs ID Indicators (Transcript)</h2>
+                  
+                    <p><strong>Destyni:</strong> Hey everybody! Today I’m going to be talking to you about CSS Class Selectors and ID Selectors: What’s the difference between the two? How do we use them?</p>
+                    <p>Okay, to start, I have created this basic markup, uh, website, with no selectors and no styling whatsoever.</p>
+                    <p>[Brings up webpage window to show example]</p>
+                    <p>Uh, this is basically what it looks like. You have your header, a couple of paragraphs, the footer, and it’s pretty basic. There’s no styling whatsoever on it.</p> 
+                    <p>[Returns to Visual Studio Code window]</p>
+                    <p>For the purpose of this presentation, I’m going to go ahead and embed a stylesheet. As you know, we’re supposed to use external stylesheets, they’re more efficient when designing a website. But yeah, just for the purpose of this presentation, I’m going to go ahead and embed the stylesheet.</p>
+                    <p>So I’m going to put that into the head of our webpage here, style, oh and it made the closing tag for me, that’s perfect. Okay, so that’s where my style rules are going to go for this website. </p>
+                    <p>Uhm, okay, so to start we’re going to put in an ID Selector into one of our paragraphs.</p>
+                    <p>[Selects the first p tag in document]</p>
+                    <p>I’m going to put in an id here and I’m going to call him p id="special-snowflake" because he is the only element on this page that is allowed to have that ID. IDs are unique and they apply to only one element.</p>
+                    <p>[Selects the embedded stylesheet]</p>
+                    <p> So let’s give him a rule. And in our stylesheet, we’re going to put a pound sign (or hashtag, depending on what generation you’re from) to specify that this is an ID selector. I’m going to type #special.snowflake { } to put that rule there and—oops! </p>
+                    <p>[Highlights #special.snowflake]</p>
+                    <p>Look, I put a period here and I put a dash there [referencing the original id “special-snowflake” in the p tag]. It has to be spelled exactly the same in order to apply to that selector.  So I fix that and the rule I’m going to apply to him is color—uh, let’s make him red.</p>
+                    <p>[Types color: red; into the CSS selector rule]</p>
+                    <p>Let’s save that and see how it looks on our website. </p>
+                    <p>[Pulls up the webpage window and refreshes. The first paragraph now shows red text.]</p>
+                    <p>Yep! Look, our first paragraph has turned red. It’s following our ID Selector rule. Uhm, so, let’s say I want to make this footer red as well. Easy, right? I just go to my footer [tag], put in an id, and let’s do special-snowflake. There we go. Save that. </p>
+                    <p>[Pulls up example page window and refreshes the page. The footer has turned red.]</p>
+                    <p>Now, it looks like that worked. However, when we put that into the validator—</p>
+                    <p>[Pulls up W3 Schools Validator and pastes codes into Direct Input. Clicks the “Check” button and waits for the results to load. It takes a few seconds.]</p>
+                    <p>And our results? Yep, it threw an error. It says “Duplicate ID”. Again, the ID [special-snowflake] can only be used on one element per page. Even though this is a footer and this is a paragraph, it doesn’t matter because that particular ID can only be used once.</p>
+                    <p> [Highlights footer id="special-snowflake" ]</p>
+                    <p> Let’s change this to special-snowflake2—</p>
+                    <p> [Highlights #special-snowflake { color: red; } ]</p>
+                    <p> —Copy this rule in our style [pastes a duplicate rule in the embedded stylesheet], and change that to #special-snowflake2. Save that. Let’s copy that code and validate it. Check. And what have we got here? Yep, “Document check completed. No errors or warnings to show.”</p>
+                    <p>[Pulls up example webpage and refreshes it. Nothing appears to have changed.]</p>
+                    <p> On our website here, they’re both still red. Perfect! </p>
+                    <p> The problem with this is that if I keep adding unique IDs that follow the same rule through my entire document, my stylesheet’s going to get pretty bulky for no reason. So, what would be more effective here is if I use a Class Selector. Let me go ahead and get rid of this duplicate rule—</p>
+                    <p> [Erases #special-snowflake2 rule from the stylesheet]</p>
+                    <p>And let’s change this [has #special-snowflake rule highlighted] to a Class Selector. To signify a class selector in your stylesheet you use a period, also called a full stop. And I’m going to give it a different name, you know, for kicks and giggles, I’m going to call it byu-students.</p>
+                    <p>[Types .byu-students { color: red; } ]</p>
+                    <p> Because we’re all BYU students, right? That can apply to multiple [elements] on a page. </p>
+                    <p> [Highlights p id="special-snowflake" ]</p>
+                    <p>And here I’m going to type p class="byu-students". And I’m going to put that same [selector] here [in the footer tag]. </p>
+                    <p>[Types footer class="byu-student" ]</p>
+                    <p>Again, make sure that the spelling is identical [as declared in the stylesheet]. [Highlights byu-students in the stylesheet. Visual Studio Code automatically highlights every other instance in the document. “byu-student” is not highlighted.]</p>
+                    <p>See, look, I made a mistake. Here, this is “byu-student” [types in an “s”] There we go. Now, highlight it, make sure it’s the same. They’re the same. There we go. Save that. We’ll refresh our example page here…</p>
+                    <p>[Pulls up the example page and refreshes. The page is unchanged.]</p>
+                    <p>Yep both [paragraph and footer] are red like they should be. Let’s copy our code and validate to make sure we’re following the rules. Yep, no errors or warnings, and we have one rule that is followed by both elements. That is what we want.</p>
+                    <p>Now, what’s cool about this is that you can include an ID and a Class to the same element. Like, say—and I’ve got my website here—</p>
+                    <p>[Pulls up the example website, points to first paragraph and footer]</p>
+                    <p>I like that they’re both red, but I want the paragraph to have a black background and not the footer. [Selects stylesheet] If I change my class here, to include background-color: black; and save that…</p>
+                    <p>[Pulls up example website and refreshes]</p>
+                    <p>Both elements [footer and paragraph] changed! So to [fix] that, I’m going to put my special-snowflake id back into this paragraph. p class="byu-students" id="special-snowflake" There we go. [Highlights background-colour: black; in style sheet]. Now I’m going to take this style rule out of the byu-students class and put it in the ID—with the hashtag—special-snowflake. </p>
+                    <p>#special-snowflake { background-color: black;}</p>
+                    <p>There we go, and save that. How does that turn out? [Refreshes example webpage. Only the paragraph has a black background now.] There we go. And see, both [footer and paragraph] are following the [byu-students] class rule, and only our special snowflake is following the background—ID rule. </p>
+                    <p>As you can see, classes are really useful [for] putting the same rule on multiple elements. Let’s put that byu-students class into our header. h1 class=”byu-students”>. Okay, I’ll save that. And I’m going to do a special ID for this… uhm… [long pause] I’m going to do…. Uh…</p>
+                    <p>…Head…</p>
+                    <p>[Types #head { } into the stylesheet]</p>
+                    <p>…Is my ID for this rule. And I will give it a green background. #head { background-color: green; } This is going to look terrible because they’re opposite colours but hey, this is for… science… right? ‘Kay.</p>
+                    <p>[Types id=”head” into the h1 tag after the class selector.]</p>
+                    <p>Save that. [Refreshes example webpage. The background of the webpage header has become green.] There we go. We have a green background on our unique head ID. </p>
+                    <p>Okay, so, there [is one more thing] you need to know about the class selector. And that is that it gets even more specific. Uhm, let’s look at my website here. I’m going to put in another class selector in this [the third p tag] paragraph here that allows the class selector byu-students… We’ll save that, see what happens… [refreshes page, the third paragraph now displays red text.] Cool, it turned it red. But now it matches my footer, and I don’t like that. </p>
+                    <p>So what if I want the paragraphs in the byu-students class to be green instead of red? Well, I just go up here to my style[sheet] and put in the p, for paragraph tag, and then . for the class selector and I’ll make that green…</p>
+                    <p>[Types p.byu-students { color: green; } ] </p>
+                    <p>Alright, let’s see what happened here. [Refreshes example webpage]</p>
+                    <p>There we go. Both of these paragraphs [highlights the first and last paragraphs] are in the class byu-students, which should turn them red. But, because they are more specifically paragraphs [in that class] they’re now following the [element specific] rule [we just created] to be green. </p>
+                    <p>Alright, and that about wraps up this presentation. If you have any questions or anything you’d like to add, please put it in the comments and I will respond as soon as possible. Uhm, thanks for watching and I’m looking forward to seeing your comments! See ya, guys.</p>
+                </main>
+            
+            <footer class="byu-students">
+                <p>&copy; 2019 Destyni Shirley | Utah, USA | <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a></p>
+            </footer>
+</body>
+
+</html>
