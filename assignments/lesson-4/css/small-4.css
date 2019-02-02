@@ -1,0 +1,62 @@
+*  { 
+   margin: 0; 
+   box-sizing: border-box; 
+   text-align: center;
+}
+
+header {
+    color: #5995ED;
+    background-color: #044389;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.logo {
+height: 8rem;
+}
+
+.motto {
+    font-size: .5em;
+    line-height: 2rem;
+}
+
+nav {
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1.375em;
+    line-height: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+color: #FFF;
+text-decoration: none;
+}
+
+#current-page {
+background-color: #80CEEC;
+}
+
+li:hover {
+background-color: #FFF;
+}
+
+li:hover a {
+color: #FFAD05;
+background-color: #FFF;
+}
+
+nav ul {
+list-style: none;
+display: inline;
+}
+
+
+
