@@ -1,0 +1,253 @@
+body  { 
+   margin: 0; 
+   box-sizing: border-box; 
+   font-family: 'Roboto Light', sans-serif;
+   text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+}
+
+h1, h3 {
+color: #FFAD05;
+}
+
+h3 {
+margin: 0px;
+}
+
+h2, h4 {
+color: #FCFF4B;
+}
+
+header {
+    color: #5995ED;
+    background-color: #044389;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.logo {
+height: 8rem;
+}
+
+.motto {
+    font-size: .5em;
+    line-height: 2rem;
+}
+
+#menu-link {
+display: none;
+}
+
+nav {
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1.375em;
+    line-height: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#current-page {
+background-color: #80CEEC;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 20%;
+  padding-right: 20%;
+  overflow: hidden;
+  background-color: #5995ED;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  max-height: 3em;
+}
+
+@media (max-width: 1325px) {
+ul {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+}
+
+@media (max-width: 1140px) {
+ul {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+}
+
+@media (max-width: 1052px) {
+ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+}
+
+@media (max-width: 998px) {
+ul {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+}
+
+@media (max-width: 952px) {
+ul {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+}
+
+@media (max-width: 837px) {
+ul {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+}
+
+@media (max-width: 802px) {
+nav {
+   font-size: 1em;
+}
+ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+}
+
+@media (max-width: 795px) {
+ul {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+}
+
+li {
+ display: inline;
+ float: left;
+}
+
+li:hover {
+background-color: #FFF;
+}
+
+li a {
+display: block;
+color: #FFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li:hover a {
+color: #FFAD05;
+background-color: #FFF;
+}
+
+.hero-container {
+position: relative;
+width: 968px;
+margin: auto;
+}
+
+.weather-summary {
+background-color: rgba(128,206,236, 0.6);
+width: 250px;
+position: absolute;
+top: 25px;
+left: 25px;
+z-index: 999;
+padding: 10px;
+line-height: 1.5rem;
+}
+
+.fiveDayForecast {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+background-color: #044389;
+position: relative;
+width: 400px;
+margin: auto;
+}
+
+.forecastimg {
+height: 10rem;
+margin: 1.5rem;
+border: solid white .5rem;
+}
+
+.articleimg {
+height: 20rem;
+margin: 1rem;
+float: right;
+padding-right: 0px;
+box-shadow: 10px 10px 5px #044389;
+}
+
+article {
+background-color: #5995ED;
+width: 900px;
+padding: 1rem;
+margin: auto;
+text-align: left !important;
+border: solid #FFAD05 1px;
+}
+
+button {
+background-color: #044389;
+color: #FFF;
+border: none;
+padding: 1rem;
+text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+button:hover {
+background-color: #FFAD05;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    width: 968px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 5px #044389;
+}
+
+footer {
+    color: #FFF;
+    background-color: #80CEEC;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Raleway', sans-serif;
+    width: 968px;
+    margin: auto;
+    padding: 1rem;
+}

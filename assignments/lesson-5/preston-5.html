@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WTGI Weather | Preston, Idaho</title>
+    <meta name="description" content="WTGI Weather page featuring the Idaho town of Preston">
+
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
+    <link rel="stylesheet" media="screen and (min-width: 745px)" href="https://kaqurei.github.io/assignments/lesson-5/css/large-5.css">
+    <link rel="stylesheet" media="screen and (max-width: 745px)" href="https://kaqurei.github.io/assignments/lesson-5/css/small-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <script>
+function jsUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth;
+    var height = window.innerHeight ||
+                 document.documentElement.clientHeight ||
+                 document.body.clientHeight;
+
+    document.getElementById('jsWidth').innerHTML = width;  // Display the width
+    document.getElementById('jsHeight').innerHTML = height;// Display the height
+};
+window.onload = jsUpdateSize;       // When the page first loads
+window.onresize = jsUpdateSize;     // When the browser changes size
+
+function jqUpdateSize(){
+    // Get the dimensions of the viewport
+    var width = $(window).width();
+    var height = $(window).height();
+
+    $('#jqWidth').html(width);      // Display the width
+    $('#jqHeight').html(height);    // Display the height
+};
+$(document).ready(jqUpdateSize);    // When the page first loads
+$(window).resize(jqUpdateSize);     // When the browser changes size
+    </script>
+</head>
+
+<body>
+
+<header> 
+    <img class="logo" src="https://kaqurei.github.io/assignments/lesson-4/images/weather-2371967_960_720.png" alt="WTGI Logo"> 
+
+    <section class="headings">
+        <h1>WTGI Weather</h1>
+        <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
+    </section>
+</header>
+
+<nav>
+    <a id="menu-link" href="#">Menu</a>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li id="current-page"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Preston, Idaho</h1>
+
+    <div class="hero-container">
+    <img class="hero-img" src="https://kaqurei.github.io/assignments/lesson-5/images/idaho-1602027_960_720.jpg" alt="WTGI Hero Image Placeholder">
+            <div class="weather-summary">
+                <h2>Weather Summary</h2>
+                <p><strong>Currently:</strong> Snowy</p>
+                 <p><strong>High:</strong> 36&deg;</p>
+                 <p><strong>Wind Chill:</strong> 12&deg;</p>
+                 <p><strong>Humidity:</strong> 8%</p>
+                 <p><strong>Wind Speed:</strong> 8 MPH</p>
+             </div>
+    </div>
+</main>
+<br>
+<div class="fiveDayForecast">
+    <h3>5 Day Forecast</h3>
+    <img class="forecastimg" src="https://kaqurei.github.io/assignments/lesson-5/images/forecast.png" alt="5 Day Forecast Placeholder">
+</div>
+<br>
+<article>
+    <img class="articleimg" src="https://kaqurei.github.io/assignments/lesson-5/images/nature-3159121_960_720.jpg" alt="Flower breaking through snow">
+    <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2> 
+    <h3>by Madeleine Coles</h3>
+    <p>Despite the cold temperatures and recent snowfall in East Idaho, the National Weather Service still says the Gem State is expected to have a warmer than normal winter.</p>
+    <p>The weather service’s winter outlook was released last month and predicted some states, including Idaho, would have warmer and drier winters.</p>
+    <p>The weather service has since revised that forecast and now says it’s no longer so sure about this winter being drier than normal in Idaho. There’s a chance the state could receive more ...</p>
+    <p><button onclick="window.location.href = 'https://www.idahostatejournal.com/news/local/more-snow-now-possible-weather-service-revises-winter-forecast-for/article_9fdd96b6-238e-55fe-9bd7-2a572fc93a60.html';">Continue Reading Article...</button></p>
+</article>
+<br><br>
+<div class="contact">
+    <p><strong>WTGI Weather</strong>
+        <br>321 Sesame Street
+        <br>Fish Haven, ID 83287</p>
+        <p> &#9742; 999.999.9999
+            <br>
+            &#9993; contact@wtgiweather.news
+        </p>
+    <div class="map"><img src="https://kaqurei.github.io/assignments/lesson-5/images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
+</div>
+
+<footer>&copy;2019 WTGI Weather | Attributions | Destyni Shirley<br>09 Februrary 2019</footer>
+
+<div id="jsWidth"></div>
+
+</body>
+
+</html>
