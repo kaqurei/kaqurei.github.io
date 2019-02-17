@@ -32,5 +32,5 @@
   var year = y + 1900;
 
   var n = weekday[d.getDay()] + ", " + dayOfMonth + " " + month[d.getDay()] + " " + year;
-  document.getElementById("demo").innerHTML = n;
+  document.getElementById("output").innerHTML = n;
 }
