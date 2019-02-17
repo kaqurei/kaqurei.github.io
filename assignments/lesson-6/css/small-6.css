@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body  { 
    margin: 0; 
    box-sizing: border-box; 
@@ -77,6 +82,7 @@ background-color: #FFF;
 
 #menu {
 list-style: none;
+padding-inline-start: opx;
 display: none;
 }
 
