@@ -1,0 +1,308 @@
+body  { 
+   margin: 0; 
+   box-sizing: border-box; 
+   font-family: 'Roboto Light', sans-serif;
+   text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+}
+
+h1, h3 {
+color: #FFAD05;
+}
+
+h3 {
+margin: 0px;
+}
+
+h2, h4 {
+color: #FCFF4B;
+}
+
+header {
+    color: #5995ED;
+    background-color: #044389;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header img, .headings {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+height: 8rem;
+}
+
+.motto {
+    font-size: .5em;
+    line-height: 2rem;
+}
+
+.current-conditions {
+    width: 10em;
+    margin: auto;
+   font-size: 1rem;
+   background-color: rgba(128,206,236, 0.6);
+   border: solid #FFAD05 1px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+
+.current {
+display: flex;
+flex-wrap: wrap;
+width: 5rem;
+margin-left: 1rem;
+margin-right: 1rem;
+color: #FCFF4B;
+line-height: 1.5rem;
+}
+
+.conditions-img {
+height: 3rem;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu-link {
+display: none;
+}
+
+nav {
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1.5em;
+    line-height: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+#current-page {
+background-color: #80CEEC;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  overflow: hidden;
+  background-color: #5995ED;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  max-height: 3em;
+}
+
+@media (max-width: 1353px) {
+ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+}
+
+@media (max-width: 1186px) {
+ul {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+}
+
+@media (max-width: 1130px) {
+ul {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+}
+
+@media (max-width: 1057px) {
+ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+h2 {
+font-size: 1.2em;
+}
+nav {
+    font-size: 1.2em;
+}
+}
+
+@media (max-width: 1055px) {
+ul {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.weather-summary p {
+margin: 5px;
+}
+}
+
+@media (max-width: 912px) {
+ul {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+}
+
+@media (max-width: 856px) {
+ul {
+  padding-left: opx;
+  padding-right: 0px;
+}
+nav {
+    font-size: 1em;
+}
+.weather-summary p {
+font-size: .8em;
+}
+header {
+font-size: 1.5rem;
+}
+}
+
+li {
+ display: inline;
+ float: left;
+}
+
+li:hover {
+background-color: #FFF;
+}
+
+li a {
+display: block;
+color: #FFF;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+li:hover a {
+color: #FFAD05;
+background-color: #FFF;
+}
+
+.hero-img {
+width: 100%;
+}
+
+.hero-container {
+position: relative;
+width: 75%;
+margin: auto;
+}
+
+.weather-summary {
+background-color: rgba(128,206,236, 0.6);
+width: 25%;
+position: absolute;
+top: 2rem;
+left: 3rem;
+z-index: 999;
+padding: 1rem;
+line-height: 1.5rem;
+}
+
+.fiveDayForecast {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+background-color: #044389;
+position: relative;
+width: 35rem;
+margin: auto;
+}
+
+table {
+background-color: #fff;
+margin: 1.5rem;
+border: solid white .2rem;
+}
+
+th {
+background-color: #5995ED;
+padding: 1.5rem;
+font-size: 1rem;
+}
+
+td {
+padding: .2rem;
+}
+
+.articleimg {
+height: 20rem;
+margin: 1rem;
+float: right;
+padding-right: 0px;
+box-shadow: 1rem 1rem .5rem #044389;
+}
+
+article {
+background-color: #5995ED;
+width: 70%;
+padding: 1rem;
+margin: auto;
+text-align: left !important;
+border: solid #FFAD05 1px;
+}
+
+button {
+background-color: #044389;
+color: #FFF;
+border: none;
+padding: 1rem;
+text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+button:hover {
+background-color: #FFAD05;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 1rem 1rem .5rem #044389;
+}
+
+footer {
+    color: #FFF;
+    background-color: #80CEEC;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    padding: 1rem;
+}

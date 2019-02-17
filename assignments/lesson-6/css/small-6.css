@@ -1,0 +1,155 @@
+body  { 
+   margin: 0; 
+   box-sizing: border-box; 
+   font-family: 'Roboto Light', sans-serif;
+   text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+}
+
+h1, h3 {
+color: #FFAD05;
+}
+
+h3 {
+margin: 0px;
+}
+
+h2, h4 {
+color: #FCFF4B;
+}
+
+header {
+    color: #5995ED;
+    background-color: #044389;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+header img, .headings {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 10px;
+}
+
+.logo {
+height: 5rem;
+}
+
+.motto {
+    font-size: .5rem;
+    line-height: 1rem;
+}
+
+.current-conditions {
+display: none;
+}
+
+nav {
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1.375em;
+    line-height: 3rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav a {
+color: #FFF;
+text-decoration: none;
+}
+
+#current-page {
+background-color: #80CEEC;
+}
+
+li:hover {
+background-color: #FFF;
+}
+
+li:hover a {
+color: #FFAD05;
+background-color: #FFF;
+}
+
+#menu {
+list-style: none;
+display: none;
+}
+
+.hero-img {
+width: 100%;
+}
+
+.hero-container {
+position: relative;
+width: 100%;
+}
+
+.weather-summary {
+background-color: rgba(128,206,236, 0.6);
+width: 250px;
+position: absolute;
+top: 25px;
+left: 25px;
+z-index: 999;
+padding: 10px;
+line-height: 1.5rem;
+}
+
+.fiveDayForecast {
+    display: none;
+}
+
+.articleimg {
+width: 100%;
+}
+
+article {
+background-color: #5995ED;
+padding: 1rem;
+text-align: left !important;
+border: solid #FFAD05 1px;
+}
+
+button {
+background-color: #044389;
+color: #FFF;
+border: none;
+padding: 1rem;
+text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 5px #044389;
+}
+
+footer {
+    color: #FFF;
+    background-color: #80CEEC;
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Raleway', sans-serif;
+    padding: 1rem;
+}
