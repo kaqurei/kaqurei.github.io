@@ -8,8 +8,8 @@
     <meta name="description" content="WTGI Weather page featuring the Idaho town of Preston">
 
     <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
-    <link rel="stylesheet" media="screen and (min-width: 750px)" href="https://kaqurei.github.io/assignments/lesson-6/css/large-6.css">
-    <link rel="stylesheet" media="screen and (max-width: 751px)" href="https://kaqurei.github.io/assignments/lesson-6/css/small-6.css">
+    <link rel="stylesheet" media="screen and (max-width: 750px)" href="css/small-6.css">
+    <link rel="stylesheet" media="screen and (min-width: 751px)" href="css/large-6.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
@@ -17,13 +17,13 @@
 <body>
 
 <header> 
-        <img class="logo" src="https://kaqurei.github.io/assignments/lesson-6/images/weather-2371967_960_720.png" alt="WTGI Logo">
+        <img class="logo" src="images/weather-2371967_960_720.png" alt="WTGI Logo">
         <section class="headings"> 
         <h1>WTGI Weather</h1>
         <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
     </section>
     <div class="current-conditions">
-        <img class="conditions-img" src="https://kaqurei.github.io/assignments/lesson-6/images/cloudy-37012__340.png" alt="Current Condition: Snowy"> 
+        <img class="conditions-img" src="images/cloudy-37012__340.png" alt="Current Condition: Snowy"> 
         <div class="current"><b>Current Conditions</b></div>
     </div>
 </header>
@@ -44,13 +44,10 @@
     <h1>Preston, Idaho</h1>
 
     <div class="hero-container">
-            <picture>    
-             <img class="hero-img" 
-                  srcset="images\idaho-small.jpg 655w"
-                  sizes="(max-width:655px) 638px"
-                  src="images\idaho-large.jpg"
-                  alt="Charming Idaho Countryside">
-            </picture>
+        <picture>
+            <source srcset="images/idaho-small.jpg" media="(max-width: 655px)">
+            <img class="hero-img" src="images/idaho-large.jpg" alt="Charming Idaho Countryside">
+       </picture>
              <div class="weather-summary">
                 <h2>Weather Summary</h2>
                 <p><strong>Currently:</strong> Snowy</p>
@@ -96,7 +93,7 @@
 </div>
 <br>
 <article>
-    <img class="articleimg" src="https://kaqurei.github.io/assignments/lesson-6/images/nature-3159121_960_720.jpg" alt="Flower breaking through snow">
+    <img class="articleimg" src="images/nature-3159121_960_720.jpg" alt="Flower breaking through snow">
     <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2> 
     <h3>by Madeleine Coles</h3>
     <p>Despite the cold temperatures and recent snowfall in East Idaho, the National Weather Service still says the Gem State is expected to have a warmer than normal winter.</p>
@@ -113,14 +110,14 @@
             <br>
             &#9993; contact@wtgiweather.news
         </p>
-    <div class="map"><img src="https://kaqurei.github.io/assignments/lesson-6/images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
+    <div class="map"><img src="images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
 </div>
 </main>
 
 <footer>
         &copy;2019 WTGI Weather | Attributions | Destyni Shirley <div id='output'></div>
-        <script src="https://kaqurei.github.io/assignments/lesson-6/scripts/currentdate.js"></script>
-        <script src="https://kaqurei.github.io/assignments/lesson-6/scripts/hamburgermenu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/hamburgermenu.js"></script>
     </footer>
 </body>
 
