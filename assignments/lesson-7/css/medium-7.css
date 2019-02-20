@@ -288,3 +288,12 @@ nav {
 width: 3rem;
 }
 }
+
+@media (max-width: 613px) {
+nav {
+    font-size: .6em;
+}
+.articleimg {
+width: 24rem;
+}
+}
