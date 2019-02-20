@@ -109,27 +109,6 @@ ul {
   max-height: 3em;
 }
 
-@media (max-width: 1353px) {
-ul {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-}
-
-@media (max-width: 1186px) {
-ul {
-  padding-left: 8%;
-  padding-right: 8%;
-}
-}
-
-@media (max-width: 1130px) {
-ul {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-}
-
 li {
  display: inline;
  float: left;
@@ -200,11 +179,12 @@ padding: .2rem;
 }
 
 .articleimg {
-height: 20rem;
 margin: 1rem;
 float: right;
 padding-right: 0px;
 box-shadow: 1rem 1rem .5rem #044389;
+width: 25rem;
+height: auto;
 }
 
 article {
@@ -283,11 +263,26 @@ footer {
     padding: 1rem;
 }
 
-@media (max-width: 1057px) {
+@media (max-width: 1055px) {
 h2 {
-font-size: 1.2em;
+font-size: 1.5em;
 }
 nav {
-    font-size: 1.2em;
+    font-size: 1em;
 }
+}
+
+@media (max-width: 971px) {
+
+.weather-summary {
+background-color: rgba(128,206,236, 0.6);
+width: 250px;
+position: absolute;
+top: 25px;
+left: 25px;
+z-index: 999;
+padding: 10px;
+line-height: 1.5rem;
+}
+
 }

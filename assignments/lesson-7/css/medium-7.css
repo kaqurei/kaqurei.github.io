@@ -98,6 +98,7 @@ background-color: #80CEEC;
 }
 
 ul {
+  padding: 0;
   list-style-type: none;
   margin: 0;
   overflow: hidden;
@@ -111,12 +112,12 @@ ul {
 li {
  display: inline;
  float: left;
+ padding: 0px;
 }
 
 li:hover {
 background-color: #FFF;
 }
-
 li a {
 display: block;
 color: #FFF;
@@ -181,14 +182,6 @@ td {
 padding: .2rem;
 }
 
-.articleimg {
-height: 20rem;
-margin: 1rem;
-float: right;
-padding-right: 0px;
-box-shadow: 1rem 1rem .5rem #044389;
-}
-
 article {
 background-color: #5995ED;
 width: 70%;
@@ -196,6 +189,14 @@ padding: 1rem;
 margin: auto;
 text-align: left !important;
 border: solid #FFAD05 1px;
+}
+
+.articleimg {
+margin: 1rem;
+float: right;
+padding-right: 0px;
+box-shadow: 1rem 1rem .5rem #044389;
+width: 18rem;
 }
 
 button {
@@ -262,4 +263,28 @@ footer {
     width: 100%;
     margin: auto;
     padding: 1rem;
+}
+
+@media (max-width: 739px) {
+h1 {
+font-size: 1.5em;
+}
+nav {
+    font-size: .8em;
+}
+
+.motto {
+    font-size: .5em;
+    line-height: 1rem;
+}
+}
+
+@media (max-width: 650px) {
+nav {
+    font-size: .7em;
+}
+
+.current {
+width: 3rem;
+}
 }
