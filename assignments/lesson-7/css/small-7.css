@@ -36,7 +36,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 }
 
 header img, .headings {
@@ -85,14 +85,14 @@ color: #FFAD05;
 
 .menu {
 list-style: none;
-padding-inline-start: opx;
+padding-inline-start: 0px;
 display: none;
 }
 
 .responsive {
 display: block;
 list-style: none;
-padding-inline-start: opx;
+padding-inline-start: 0px;
 }
 
 .hero-img {
@@ -168,7 +168,8 @@ width: 95%;
     justify-content: space-around;
     align-items: center;
     color: #FFF;
-    background-color: #5995ED;
+    background-color: #5995ED;
+
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: 'Raleway', sans-serif;
@@ -183,7 +184,8 @@ width: 95%;
 
 footer {
     color: #FFF;
-    background-color: #80CEEC;
+    background-color: #80CEEC;
+
     font-size: 1rem;
     line-height: 1rem;
     font-family: 'Raleway', sans-serif;
