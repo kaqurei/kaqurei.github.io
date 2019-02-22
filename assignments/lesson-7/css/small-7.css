@@ -83,10 +83,16 @@ li:hover a {
 color: #FFAD05;
 }
 
-#menu {
+.menu {
 list-style: none;
 padding-inline-start: opx;
 display: none;
+}
+
+.responsive {
+display: block;
+list-style: none;
+padding-inline-start: opx;
 }
 
 .hero-img {
