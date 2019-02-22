@@ -31,7 +31,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 }
 
 header img, .headings {
@@ -91,7 +91,7 @@ nav {
     font-family: 'Raleway', sans-serif;
     display: flex;
     justify-content: center;
-    flex-wrap: no-wrap;
+    flex-wrap: nowrap;
 }
 
 #current-page {
@@ -244,7 +244,8 @@ figure:hover {box-shadow: 0 0 50px #333;}
     justify-content: space-around;
     align-items: center;
     color: #FFF;
-    background-color: #5995ED;
+    background-color: #5995ED;
+
     font-size: 1rem;
     line-height: 1.5rem;
     font-family: 'Raleway', sans-serif;
@@ -254,7 +255,8 @@ figure:hover {box-shadow: 0 0 50px #333;}
 
 footer {
     color: #FFF;
-    background-color: #80CEEC;
+    background-color: #80CEEC;
+
     font-size: 1rem;
     line-height: 1rem;
     font-family: 'Raleway', sans-serif;
