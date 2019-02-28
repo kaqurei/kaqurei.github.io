@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Stylized Table | CIT 230 - BYU-I Online | Destyni Shirley</title>
+    <meta name="description" content="Destyni's stylized table for CIT 230 week 8 assignment">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+    <style>
+table {
+   font-family: Ubuntu, sans-serif;
+   border-spacing: 0;
+}
+
+caption {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: .5rem;
+  background-color: #7fb9c2;
+}
+
+table, caption {
+    box-shadow: 8px 8px 12px #628ca6;
+    border: solid 1px #ccc;
+}
+
+th, td {
+  font-weight: normal;
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #ccc;
+}
+
+thead td {
+    color: #FFF;
+    font-weight: bold;
+    background-color: #628ca6;
+}
+
+tbody td:hover {
+    background-color: #628ca6;
+    border: none;  
+}
+
+#blackfri {
+  font-style: italic;
+}
+
+tr:nth-of-type(even) {
+    background-color: #e7f0ed;
+  border: 1px solid grey;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #e7ffed ;
+}
+
+tfoot {
+  font-size: .7rem;
+}
+
+tfoot td {
+    background-color: #7fb9c2;
+}
+    </style>
+</head>
+
+<body>
+
+<main>
+        <table>
+                <caption>ACME Wildwest</caption>
+              <thead>
+                <tr>
+                  <td>Period</td>
+                  <td>Sales</td>
+                  <td>Sales Goal</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>August</th>
+                  <td>$3,590</td>
+                  <td>$4,000</td>
+                </tr>
+                <tr>
+                  <th>September</th>
+                  <td>$4,420</td>
+                  <td>$5,000</td>
+                </tr>
+                <tr>
+                  <th>October</th>
+                  <td>$4,870</td>
+                  <td>$5,000</td>
+                </tr>
+                <tr>
+                  <th>November</th>
+                  <td>$8,610</td>
+                  <td>$7,500</td>
+                </tr>
+                <tr>
+                  <th id="blackfri">Black Friday</th>
+                  <td colspan="2">$3,200</td>
+                </tr>
+                <tr>
+                  <th>December</th>
+                  <td>$6,820</td>
+                  <td>$7,500</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                  <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                </tr>
+                </tfoot>
+              </table>
+</main>
+</body>
+
+</html>

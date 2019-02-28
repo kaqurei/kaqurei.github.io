@@ -1,0 +1,302 @@
+body  { 
+   margin: 0; 
+   box-sizing: border-box; 
+   font-family: 'Roboto Light', sans-serif;
+   text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5rem;
+}
+
+h1, h3 {
+color: #FFAD05;
+}
+
+h3 {
+margin: 0px;
+}
+
+h2, h4 {
+color: #FCFF4B;
+}
+
+header {
+    color: #5995ED;
+    background-color: #044389;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: no-wrap;
+}
+
+header img, .headings {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+height: 8rem;
+}
+
+.motto {
+    font-size: .5em;
+    line-height: 2rem;
+}
+
+.current-conditions {
+    width: 10em;
+    margin: auto;
+   font-size: 1rem;
+   background-color: rgba(128,206,236, 0.6);
+   border: solid #FFAD05 1px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+
+.current {
+display: flex;
+flex-wrap: wrap;
+width: 5rem;
+margin-left: 1rem;
+margin-right: 1rem;
+color: #FCFF4B;
+line-height: 1.5rem;
+}
+
+.conditions-img {
+height: 3rem;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu-link {
+display: none;
+}
+
+nav {
+    color: #FFF;
+    background-color: #5995ED;
+    font-size: 1em;
+    line-height: auto;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#current-page {
+background-color: #80CEEC;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #5995ED;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  max-height: 3em;
+}
+
+li {
+ display: inline;
+ float: left;
+ padding: 0px;
+}
+
+li:hover {
+background-color: #FFF;
+}
+li a {
+display: block;
+color: #FFF;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+li:hover a {
+color: #FFAD05;
+background-color: #FFF;
+}
+
+.hero-img {
+width: 100%
+}
+
+.hero-container {
+position: relative;
+width: 75%;
+margin: auto;
+}
+
+.weather-summary {
+background-color: rgba(128,206,236, 0.6);
+width: 250px;
+position: absolute;
+top: 25px;
+left: 25px;
+z-index: 999;
+padding: 10px;
+line-height: 1.5rem;
+}
+
+.weather-summary p {
+font-size: .8em;
+}
+
+.fiveDayForecast {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+background-color: #044389;
+position: relative;
+width: 35rem;
+margin: auto;
+}
+
+table {
+background-color: #fff;
+margin: 1.5rem;
+border: solid white .2rem;
+}
+
+th {
+background-color: #5995ED;
+padding: 1.5rem;
+font-size: 1rem;
+}
+
+td {
+padding: .2rem;
+}
+
+article {
+background-color: #5995ED;
+width: 70%;
+padding: 1rem;
+margin: auto;
+text-align: left !important;
+border: solid #FFAD05 1px;
+}
+
+.articleimg {
+margin: 1rem;
+float: right;
+padding-right: 0px;
+box-shadow: 1rem 1rem .5rem #044389;
+width: 18rem;
+}
+
+button {
+background-color: #044389;
+color: #FFF;
+border: none;
+padding: 1rem;
+text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+}
+
+button:hover {
+background-color: #FFAD05;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #FFF;
+    background-color: #5995ED;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: solid #FFAD05 1px;
+}
+
+.map {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 1rem 1rem .5rem #044389;
+}
+
+.gallery {
+  display: grid;
+  grid-template:
+    [row1-start] "figure figure" auto [row1-end]
+    [row2-start] "figure figure" auto [row2-end]
+    [row3-start] "figure figure" auto [row3-end];
+}
+
+.gallery figure {
+justify-self: center;
+}
+
+figure img {
+width: 95%;
+}
+
+footer {
+    color: #FFF;
+    background-color: #80CEEC;
+
+    font-size: 1rem;
+    line-height: 1rem;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+}
+
+@media (max-width: 739px) {
+h1 {
+font-size: 1.5em;
+}
+nav {
+    font-size: .8em;
+}
+
+.motto {
+    font-size: .5em;
+    line-height: 1rem;
+}
+}
+
+@media (max-width: 650px) {
+nav {
+    font-size: .7em;
+}
+
+.current {
+width: 3rem;
+}
+}
+
+@media (max-width: 613px) {
+nav {
+    font-size: .6em;
+}
+.articleimg {
+width: 24rem;
+}
+}
