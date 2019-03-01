@@ -191,3 +191,8 @@ footer {
     font-family: 'Raleway', sans-serif;
     padding: 1rem;
 }
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
