@@ -135,6 +135,43 @@ article p, h1, h2, h3, h4, h5 {
 margin: 1rem;
 }
 
+form {
+width: 50%;
+margin: 0 auto;
+padding: 10px;
+background-color: #5995ED;
+border: solid #FFAD05 1px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+label {
+  font-weight: bold;
+  float: left;
+  clear: none;
+  padding: 2px 1em 0 0;
+}
+
+.radio {
+ display: flex;
+ justify-content: space-between;
+}
+
+.formblock {
+display: block;
+}
+
+#rating {
+ display: inline-block;
+}
+
+#ratingvalue {
+ font-weight: bold;
+ margin-left: 25px;
+}
+
 button {
 background-color: #044389;
 color: #FFF;
@@ -190,4 +227,9 @@ footer {
     line-height: 1rem;
     font-family: 'Raleway', sans-serif;
     padding: 1rem;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
 }
