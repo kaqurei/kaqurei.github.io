@@ -202,6 +202,7 @@ margin: 0 auto;
 padding: 10px;
 background-color: #5995ED;
 border: solid #FFAD05 1px;
+display: grid;
 }
 
 input {
