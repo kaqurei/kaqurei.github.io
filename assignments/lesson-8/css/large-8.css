@@ -203,6 +203,7 @@ padding: 10px;
 background-color: #5995ED;
 border: solid #FFAD05 1px;
 display: grid;
+
 }
 
 input {
@@ -212,7 +213,7 @@ input {
 label {
   font-weight: bold;
   float: left;
-  clear: none;
+  clear: both;
   padding: 2px 1em 0 0;
 }
 
