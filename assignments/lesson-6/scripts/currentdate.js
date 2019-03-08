@@ -13,7 +13,7 @@
 
   var dayOfMonth = d.getDate();
 
-  var getMonth = new Date();
+  var getMonth =  d.getMonth();
   var month = new Array(12);
   month[0] = "January";
   month[1] = "February";
@@ -31,6 +31,6 @@
   var  y = d.getYear();
   var year = y + 1900;
 
-  var n = weekday[d.getDay()] + ", " + dayOfMonth + " " + month[d.getDay()] + " " + year;
+  var n = weekday[d.getDay()] + ", " + dayOfMonth + " " + month[d.getMonth()] + " " + year;
   document.getElementById("output").innerHTML = n;
 }
