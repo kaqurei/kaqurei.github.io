@@ -281,6 +281,23 @@ input {
   margin-bottom: 10px;
 }
 
+input[type=submit] {
+background-color: #044389;
+color: #FFF;
+border: none;
+padding: 1rem;
+text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+} 
+
+input[type=submit]:hover {
+background-color: #FFAD05;
+}
+}
+
 label {
   font-weight: bold;
   float: left;

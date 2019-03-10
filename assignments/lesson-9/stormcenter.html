@@ -47,7 +47,7 @@
             <h2>Contact Information</h2>
 
             <label for="name">Full Name* (no numbers):</label>
-            <input type="text" id="name" name="name" minlength="5" max="50" size="20" required pattern="[A-Z][A-Za-z' -]+">
+            <input type="text" id="name" name="name" minlength="5" maxlength="50" size="20" required pattern="[A-Z][A-Za-z' -]+">
 <br>
             <label for="email">Email:</label>
            <input type="email" id="email" name="email" placeholder="address@domain.com" size="20">
@@ -56,11 +56,11 @@
            <input type="tel" id="phone" name="tel" required minlength="10" size="20">
 <br>
            <label for="zip">ZIP*:</label>
-            <input type="number" id="zip" name="zip" required minlength="5" size="1">
+            <input type="number" id="zip" name="zip" required size="5">
 
             <h2>Storm Report</h2>
           <label for="date">Storm Date:</label>
-          <input type="date" id="date" name="date" minlength="5" size="5">
+          <input type="date" id="date" name="date" size="5">
 <br>
          <label for="type">Storm Type:</label>
           <input list="storm-type" id="type" name="type">
@@ -106,7 +106,7 @@
         </div>
 <br>
      <div class="formblock"> <strong>Additional Comments or Details (max 500 characters):</strong><br>
-          <textarea id="styled" name="message" max="500"></textarea>
+          <textarea id="styled" name="message" maxlength="500"></textarea>
      </div>
 <br>
           <input type="submit" value="Send Report">
