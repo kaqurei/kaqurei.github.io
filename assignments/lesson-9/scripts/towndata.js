@@ -52,15 +52,15 @@ townMotto.textContent = '"' + towns[5].motto + '"';
 sodasprings.appendChild(townMotto);
 
 var townFound = document.createElement('h4');
-townFound.textContent = 'Founded: ' + towns[4].yearFounded;
+townFound.textContent = 'Founded: ' + towns[5].yearFounded;
 sodasprings.appendChild(townFound);
 
 var townPop = document.createElement('h4');
-townPop.textContent = 'Population: ' + towns[4].currentPopulation;
+townPop.textContent = 'Population: ' + towns[5].currentPopulation;
 sodasprings.appendChild(townPop);
 
 var townRain = document.createElement('h4');
-townRain.textContent = 'Average Precipitation: ' + towns[4].averageRainfall + '"';
+townRain.textContent = 'Average Precipitation: ' + towns[5].averageRainfall + '"';
 sodasprings.appendChild(townRain);
 }
 
