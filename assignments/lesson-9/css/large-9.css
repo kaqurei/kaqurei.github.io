@@ -79,14 +79,6 @@ display: block;
   margin-right: auto;
 }
 
-.conditions-home {
-   width: 10em;
-   margin: auto;
-   font-size: 1rem;
-   background-color: #044389;
-   border: none;
-}
-
 #menu-link {
 display: none;
 }
@@ -532,4 +524,12 @@ padding: 10px;
 line-height: 1.5rem;
 }
 
+}
+
+.conditions-home {
+   width: 10em;
+   margin: auto;
+   font-size: 1rem;
+   background-color: #044389;
+   border: none;
 }

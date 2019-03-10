@@ -79,10 +79,6 @@ display: block;
   margin-right: auto;
 }
 
-.conditions-home {
-display: none;
-}
-
 #menu-link {
 display: none;
 }
@@ -505,7 +501,7 @@ footer a {
   text-decoration: none;
 }
 
-@media (max-width: 739px) {
+@media (max-width: 800px) {
 h1 {
 font-size: 1.5em;
 }
@@ -516,6 +512,9 @@ nav {
 .motto {
     font-size: .5em;
     line-height: 1rem;
+}
+.conditions-home {
+display: none;
 }
 }
 
