@@ -1,4 +1,5 @@
 body  { 
+   color: #FFF;
    margin: 0; 
    box-sizing: border-box; 
    font-family: 'Roboto Light', sans-serif;
@@ -175,6 +176,11 @@ padding: 1rem;
 border-radius: 25px;
 }
 
+.town-data p {
+color: #FFF;
+font-weight: bold;
+}
+
 .town-data img {
 max-width: 250px;
 box-shadow: 1rem 1rem .5rem #044389;
@@ -214,7 +220,7 @@ line-height: 1.5rem;
     justify-content: center;
 background-color: #044389;
 position: relative;
-width: 35rem;
+width: 35.5rem;
 margin: auto;
 }
 
@@ -253,6 +259,7 @@ border: solid #FFAD05 1px;
 }
 
 form {
+color: #044389;
 width: 50%;
 min-width: 500px;
 margin: 0 auto;
@@ -346,6 +353,10 @@ padding: 1rem;
 
 figure img {
 width: 95%;
+}
+
+figure {
+color: #000;
 }
 
 figure:hover {box-shadow: 0 0 50px #333;}
@@ -479,6 +490,14 @@ figure:hover {box-shadow: 0 0 50px #333;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+.attrib {
+background-color: #5995ED;
+border: solid #FFAD05 1px;
+width: 50rem;
+padding: 1rem;
+margin: 0 auto;
 }
 
 footer {

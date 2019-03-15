@@ -1,4 +1,5 @@
 body  { 
+   color: #FFF;
    margin: 0; 
    box-sizing: border-box; 
    font-family: 'Roboto Light', sans-serif;
@@ -144,7 +145,6 @@ grid-template-areas:
  'item3 item3 item3'
  'item4 item4 item4';
  grid-gap: 15px;
- align-items: center;
 }
 
 .item1 { 
@@ -215,6 +215,7 @@ line-height: 1.5rem;
 
 .weather-summary p {
 font-size: .8em;
+color: #000;
 }
 
 .fiveDayForecast {
@@ -231,10 +232,12 @@ table {
 background-color: #fff;
 margin: 1.5rem;
 border: solid white .2rem;
+color: #000;
 }
 
 th {
 background-color: #5995ED;
+color: #FFF;
 padding: 1.5rem;
 font-size: 1rem;
 }
@@ -261,6 +264,7 @@ width: 18rem;
 }
 
 form {
+color: #044389;
 width: 50%;
 min-width: 500px;
 margin: 0 auto;
@@ -368,6 +372,10 @@ background-color: #FFAD05;
 
 .gallery figure {
 justify-self: center;
+}
+
+figure {
+color: #000;
 }
 
 figure img {
@@ -483,6 +491,14 @@ box-shadow: 1rem 1rem .5rem #044389;
   .prev, .next,.text {font-size: 11px}
 }
 
+.attrib {
+background-color: #5995ED;
+border: solid #FFAD05 1px;
+width: 70%;
+padding: 1rem;
+margin: 0 auto;
+}
+
 
 footer {
     color: #FFF;
@@ -515,6 +531,10 @@ nav {
 }
 .conditions-home {
 display: none;
+}
+
+.home-content-wrap {
+align-items: center;
 }
 }
 

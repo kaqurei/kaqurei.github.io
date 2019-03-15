@@ -26,15 +26,15 @@ var townMotto = document.createElement('h3');
 townMotto.textContent = '"' + towns[4].motto + '"';
 preston.appendChild(townMotto);
 
-var townFound = document.createElement('h4');
+var townFound = document.createElement('p');
 townFound.textContent = 'Founded: ' + towns[4].yearFounded;
 preston.appendChild(townFound);
 
-var townPop = document.createElement('h4');
+var townPop = document.createElement('p');
 townPop.textContent = 'Population: ' + towns[4].currentPopulation;
 preston.appendChild(townPop);
 
-var townRain = document.createElement('h4');
+var townRain = document.createElement('p');
 townRain.textContent = 'Average Precipitation: ' + towns[4].averageRainfall + '"';
 preston.appendChild(townRain);
 }
@@ -51,15 +51,15 @@ var townMotto = document.createElement('h3');
 townMotto.textContent = '"' + towns[5].motto + '"';
 sodasprings.appendChild(townMotto);
 
-var townFound = document.createElement('h4');
+var townFound = document.createElement('p');
 townFound.textContent = 'Founded: ' + towns[5].yearFounded;
 sodasprings.appendChild(townFound);
 
-var townPop = document.createElement('h4');
+var townPop = document.createElement('p');
 townPop.textContent = 'Population: ' + towns[5].currentPopulation;
 sodasprings.appendChild(townPop);
 
-var townRain = document.createElement('h4');
+var townRain = document.createElement('p');
 townRain.textContent = 'Average Precipitation: ' + towns[5].averageRainfall + '"';
 sodasprings.appendChild(townRain);
 }
@@ -76,15 +76,15 @@ var townMotto = document.createElement('h3');
 townMotto.textContent = '"' + towns[1].motto + '"';
 fishhaven.appendChild(townMotto);
 
-var townFound = document.createElement('h4');
+var townFound = document.createElement('p');
 townFound.textContent = 'Founded: ' + towns[1].yearFounded;
 fishhaven.appendChild(townFound);
 
-var townPop = document.createElement('h4');
+var townPop = document.createElement('p');
 townPop.textContent = 'Population: ' + towns[1].currentPopulation;
 fishhaven.appendChild(townPop);
 
-var townRain = document.createElement('h4');
+var townRain = document.createElement('p');
 townRain.textContent = 'Average Precipitation: ' + towns[1].averageRainfall + '"';
 fishhaven.appendChild(townRain);
 }
