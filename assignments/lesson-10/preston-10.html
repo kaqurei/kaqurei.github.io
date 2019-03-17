@@ -25,7 +25,7 @@
     </section>
     <div class="current-conditions">
         <img class="conditions-img" src="images/cloudy-37012__340.png" alt="Current Condition: Snowy"> 
-        <div class="current"><b>Currently: <span id="windTemp">15</span>&deg;</b></div>
+        <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
     </div>
 </header>
 
@@ -51,11 +51,11 @@
        </picture>
              <div class="weather-summary">
                 <h2>Weather Summary</h2>
-                <p><strong>Currently:</strong> Snowy</p>
-                 <p><strong>High:</strong> 36&deg;</p>
+                <p><strong>Currently:</strong> <span id="current-weather"></span></p>
+                 <p><strong>High:</strong> <span id="temp-high"></span>&deg;</p>
                  <p><strong>Wind Chill:</strong> <span id="windChill"></span>&deg;</p>
-                 <p><strong>Humidity:</strong> 8%</p>
-                 <p><strong>Wind Speed:</strong> <span id="windSpeed">8</span> MPH</p>
+                 <p><strong>Humidity:</strong> <span id="humid"></span></p>
+                 <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> MPH</p>
              </div>
     </div>
 <br>
@@ -117,8 +117,8 @@
 
 <footer>
         &copy;2019 WTGI Weather | <a href="attrib.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni Shirley</a> <div id='output'></div>
+        <script src="scripts/weatherapi.js"></script>
         <script src="scripts/hamburgermenu.js"></script>
-        <script src="scripts/windchill.js"></script>
         <script src="scripts/currentdate.js"></script>
     </footer>
 </body>

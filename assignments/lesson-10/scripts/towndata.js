@@ -18,6 +18,8 @@ townSodaSprings (townData);
 function townPreston(jsonObj) {
 var towns = jsonObj['towns']
 
+
+
 var townName = document.createElement('h2');
 townName.textContent = towns[4].name;
 preston.appendChild(townName);
