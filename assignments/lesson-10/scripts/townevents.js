@@ -19,10 +19,11 @@ function townPreston(jsonObj) {
     for (i = 0; i < towns.length; i++) {
         var name = towns[i].name;
         if (name == "Preston") {
-            document.getElementById("townEvents").innerHTML = "<h2>Preston Events</h2>: " + towns[i].events;
+            document.getElementById("townEventsPreston").innerHTML = "<h2>Preston Events</h2> " + towns[i].events;
+            }
         }
     }
-}
+
 
 function townFishHaven(jsonObj) {
     var towns = jsonObj['towns']
@@ -32,7 +33,7 @@ function townFishHaven(jsonObj) {
     for (i = 0; i < towns.length; i++) {
         var name = towns[i].name;
         if (name == "Fish Haven") {
-            document.getElementById("townEvents").innerHTML = towns[i].events;
+            document.getElementById("townEventsFish").innerHTML = "<h2>Fish Haven Events</h2> " + towns[i].events;
         }
     }
 }
@@ -45,7 +46,7 @@ function townSodaSprings(jsonObj) {
     for (i = 0; i < towns.length; i++) {
         var name = towns[i].name;
         if (name == "Soda Springs") {
-            document.getElementById("townEvents").innerHTML = towns[i].events;
+            document.getElementById("townEventsSoda").innerHTML = "<h2>Soda Springs Events</h2> " + towns[i].events;
         }
     }
 }
