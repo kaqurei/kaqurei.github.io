@@ -12,6 +12,7 @@ weatherRequest.onload = function () {
   var humidity = weatherData.main.humidity;
   var mainTemp = weatherData.main.temp;
   var windSpeed = weatherData.wind.speed;
+  var imageConditions = "http://openweathermap.org/img/w/";
 
   document.getElementById('current-weather').innerHTML = currentCondition;
   document.getElementById('temp-high').innerHTML = highTemp;
@@ -19,6 +20,9 @@ weatherRequest.onload = function () {
   document.getElementById('windTemp').innerHTML = mainTemp;
   document.getElementById('windSpeed').innerHTML = windSpeed;
   document.getElementById('windChill').innerHTML = getWindChill();
+
+  document.getElementById("conditions-icon").setAttribute("src", imageConditions + weatherData.weather[0].icon + ".png");
+  document.getElementById("conditions-icon").setAttribute("alt", weatherData.weather[0].description);
 }
 
 function getWindChill() {

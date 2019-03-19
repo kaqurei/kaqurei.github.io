@@ -24,7 +24,7 @@
             <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
         </section>
         <div class="current-conditions">
-            <img class="conditions-img" src="images/cloudy-37012__340.png" alt="Current Condition: Snowy">
+            <img class="conditions-img" id="conditions-icon" src="" alt="">
             <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
         </div>
     </header>
@@ -100,6 +100,10 @@
             </table>
         </div>
         <br>
+        <article id="townEvents">
+   
+        </article>
+        <br>
         <article>
             <img src="images/nature-3159121_960_720.jpg" alt="Flower breaking through snow" class="articleimg">
             <h2>More Snow Now Possible: Weather service revises winter forecast for Idaho</h2>
@@ -132,6 +136,7 @@
         <div id='output'></div>
         <script src="scripts/weatherapi.js"></script>
         <script src="scripts/forecastapi.js"></script>
+        <script src="scripts/towndata.js"></script>
         <script src="scripts/hamburgermenu.js"></script>
         <script src="scripts/currentdate.js"></script>
     </footer>

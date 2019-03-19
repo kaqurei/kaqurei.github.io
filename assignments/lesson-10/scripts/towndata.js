@@ -42,6 +42,8 @@ function townPreston(jsonObj) {
             var townRain = document.createElement('p');
             townRain.textContent = 'Average Precipitation: ' + towns[i].averageRainfall + '"';
             preston.appendChild(townRain);
+
+            document.getElementById("townEvents").innerHTML = towns[i].events;
         }
     }
 }
