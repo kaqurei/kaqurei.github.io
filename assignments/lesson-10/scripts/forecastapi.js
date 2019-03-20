@@ -1,7 +1,11 @@
+//* Get JSON data from OpenWeatherMap
+
 let forecastRequest = new XMLHttpRequest();
 let forecastApiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&APPID=0b25c1f6d23d52987a6d10f8c21a31e6';
 forecastRequest.open('Get', forecastApiURLstring, true);
 forecastRequest.send();
+
+//* Function to display five-day forecast days as string rather than integer
 
 function findDayOfWeek(apiDay) {
   var dayDate = new Date(apiDay);
@@ -35,11 +39,13 @@ function findDayOfWeek(apiDay) {
   return dayOfWeek;
 }
 
+//* Get correct days for five day forecast, compare dt_txt for time stamp 18:00:00 and loop
+
 forecastRequest.onload = function () {
   let forecastData = JSON.parse(forecastRequest.responseText);
   console.log(forecastData);
 
-  var imageWeather = "http://openweathermap.org/img/w/";
+  var imageWeather = "https://openweathermap.org/img/w/";
   var forecastArray = forecastData.list;
   var dayOne, dayTwo, dayThree, dayFour, dayFive;
   var z = 0;
@@ -70,6 +76,8 @@ forecastRequest.onload = function () {
       z++;
     }
   }
+
+  //* Write data into table by element IDs.
 
   document.getElementById("day-1").innerHTML = findDayOfWeek(dayOne.dt_txt);
   document.getElementById("day-2").innerHTML = findDayOfWeek(dayTwo.dt_txt);

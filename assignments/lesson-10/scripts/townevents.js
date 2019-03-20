@@ -1,3 +1,5 @@
+//* Get data from BYU-I JSON and create functions to write the data
+
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 
@@ -10,6 +12,8 @@ request.onload = function () {
     townFishHaven(townEvents);
     townSodaSprings(townEvents);
 }
+
+//* Function to write Preston data onto page; loop through JSON to find town name, then write header and events in townEventsPreston article.
 
 function townPreston(jsonObj) {
     var towns = jsonObj['towns']
@@ -24,6 +28,7 @@ function townPreston(jsonObj) {
         }
     }
 
+//* Function to write Fish Haven data onto page; loop through JSON to find town name, then write header and events in townEventsFish article
 
 function townFishHaven(jsonObj) {
     var towns = jsonObj['towns']
@@ -37,6 +42,8 @@ function townFishHaven(jsonObj) {
         }
     }
 }
+
+//* Function to write Soda Springs data onto page; loop through JSON to find town name, then write header and events in townEventsSoda article
 
 function townSodaSprings(jsonObj) {
     var towns = jsonObj['towns']

@@ -1,6 +1,10 @@
+//* Find elements with class selector item2, item3, and item4
+
 var preston = document.querySelector('.item2');
 var sodasprings = document.querySelector('.item3');
 var fishhaven = document.querySelector('.item4');
+
+//* Get JSON data from BYU-I and create functions to display on page
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
@@ -14,6 +18,9 @@ request.onload = function () {
     townFishHaven(townData);
     townSodaSprings(townData);
 }
+
+//* Function for Preston; loop through JSON data to find town "name" object, 
+//* if Preston then create elements for displaying data and append to item2 (in variable "preston")
 
 function townPreston(jsonObj) {
     var towns = jsonObj['towns']
@@ -46,6 +53,9 @@ function townPreston(jsonObj) {
     }
 }
 
+//* Function for Soda Springs; loop through JSON data to find town "name" object, 
+//* if Soda Springs then create elements for displaying data and append to item3 (in variable "sodasprings")
+
 function townSodaSprings(jsonObj) {
     var towns = jsonObj['towns']
     var i = 0;
@@ -76,6 +86,9 @@ function townSodaSprings(jsonObj) {
         }
     }
 }
+
+//* Function for Fish Haven; loop through JSON data to find town "name" object, 
+//* if Fish Haven then create elements for displaying data and append to item4 (in variable "fishhaven")
 
 function townFishHaven(jsonObj) {
     var towns = jsonObj['towns']
