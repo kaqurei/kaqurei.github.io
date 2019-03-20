@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WTGI Weather | Storm Center</title>
+    <meta name="description" content="Report a storm or unusual weather event in Idaho">
+
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather-2371967_960_720.png" alt="WTGI Logo">
+        <section class="headings">
+            <h1>WTGI Weather</h1>
+            <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
+        </section>
+        <div class="conditions-home">
+            Please choose a city to view current conditions.
+        </div>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li id="current-page"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Gallery Contest</h1>
+        <form action="gallerycontest-thanks.html">
+            <div class="form-wrap">
+                <h2>Submit Your Photo</h2>
+
+                <div class="formblock">
+                    <label for="name">Full Name* (no numbers):</label>
+                    <input type="text" id="name" name="name" minlength="5" maxlength="50" size="20" required
+                        pattern="[A-Z][A-Za-z' -]+">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="address@domain.com" size="20">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="phone">Phone*:</label>
+                    <input type="tel" id="phone" name="tel" required minlength="10" size="20">
+                </div>
+                <br>
+                <div class="formblock">
+                    <label for="upload">Upload Your Photo (.png / .jpg only):</label>
+                    <input type="file" id="upload" name="upload" accept="image/png, image/jpeg">
+                </div>
+
+                <div class="formblock">
+                    <br>
+                    <strong>Comments (max 500 characters):</strong><br>
+                    <textarea id="styled" name="message" maxlength="500"></textarea>
+                </div>
+            </div>
+            <br>
+            <input type="submit" value="Submit Photo">
+        </form>
+
+    </main>
+
+    <footer>
+        &copy;2019 WTGI Weather | <a href="attrib.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni
+            Shirley</a>
+        <div id='output'></div>
+        <script src="scripts/hamburgermenu.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/stormsevere.js"></script>
+    </footer>
+</body>
+
+</html>
