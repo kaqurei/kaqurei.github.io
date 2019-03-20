@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WTGI Weather | Home</title>
+    <meta name="description" content="Home of WTGI Weather">
+
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather-2371967_960_720.png" alt="WTGI Logo">
+        <section class="headings">
+            <h1>WTGI Weather</h1>
+            <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
+        </section>
+        <div class="conditions-home">
+            Please choose a city to view current conditions.
+        </div>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <br>
+        <div class="attrib">
+            <h2>Credit Where It's Due...</h2>
+            <p>All images used on this site are courtesy of users on <a href="https://pixabay.com/">Pixabay.com</a>, a
+                free image resource.</p>
+            <p>Embedded weather map on home page is courtesy of <a href="https://google.com/">Google.com</a></p>
+            <p>Weather data on town pages is courtesy of <a href="https://openweathermap.org">OpenWeatherMap.org</a></p>
+            <p>Preston town article snippet from <a href="https://www.idahostatejournal.com/">Idaho State Journal</a> 
+                and links to the original article. WTGW is not affiliated with Idaho State Journal or its authors.</p>
+            <p>Disclaimer: WTGW is not a real weather company. This site is for design purposes only. 
+                Melody Scout and Yona Lakes are not real authors. The articles on Fish Haven and Soda Springs 
+                town pages are dummy text written by the student, and do not link to real articles.
+            </p>
+        </div>
+        <br>
+    </main>
+
+    <footer>
+        &copy;2019 WTGI Weather | <a href="attrib.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni
+            Shirley</a>
+        <div id='output'></div>
+        <script src="scripts/hamburgermenu.js"></script>
+        <script src="scripts/towndata.js"></script>
+        <script src="scripts/galleryslides.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+</body>
+
+</html>

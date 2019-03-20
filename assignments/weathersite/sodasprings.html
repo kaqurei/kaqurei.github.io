@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WTGI Weather | Preston, Idaho</title>
+    <meta name="description" content="WTGI Weather page featuring the Idaho town of Preston">
+
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather-2371967_960_720.png" alt="WTGI Logo">
+        <section class="headings">
+            <h1>WTGI Weather</h1>
+            <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
+        </section>
+        <div class="current-conditions">
+            <img class="conditions-img" id="conditions-icon" src="placeholder.gif"
+                alt="If this image is displayed, the javascript failed to load data from the API.">
+            <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
+        </div>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li id="current-page"><a href="#">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Soda Springs, Idaho</h1>
+        <article id="townEventsSodaSprings">
+
+        </article>
+        <br>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/soda-springs-hero-small.jpg" media="(max-width: 869px)">
+                <img class="hero-img" src="images/soda-springs-hero.jpg"
+                    alt="A beautiful shot of a geyser in Soda Springs">
+            </picture>
+            <div class="weather-summary">
+                <h2>Weather Summary</h2>
+                <p><strong>Currently:</strong> <span id="current-weather"></span></p>
+                <p><strong>High:</strong> <span id="temp-high"></span>&deg;</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span>&deg;</p>
+                <p><strong>Humidity:</strong> <span id="humid"></span></p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> MPH</p>
+            </div>
+        </div>
+        <br>
+        <div class="fiveDayForecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th id="day-1"></th>
+                    <th id="day-2"></th>
+                    <th id="day-3"></th>
+                    <th id="day-4"></th>
+                    <th id="day-5"></th>
+                </tr>
+                <tr>
+                    <td><img id="img-1" src="placeholder.gif"
+                            alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                    <td><img id="img-2" src="placeholder.gif"
+                            alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                    <td><img id="img-3" src="placeholder.gif"
+                            alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                    <td><img id="img-4" src="placeholder.gif"
+                            alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                    <td><img id="img-5" src="placeholder.gif"
+                            alt="If this image is displayed, the javascript failed to load data from the API."></td>
+                </tr>
+                <tr>
+                    <td id="high-1"></td>
+                    <td id="high-2"></td>
+                    <td id="high-3"></td>
+                    <td id="high-4"></td>
+                    <td id="high-5"></td>
+                </tr>
+                <tr>
+                    <td id="condition-1"></td>
+                    <td id="condition-2"></td>
+                    <td id="condition-3"></td>
+                    <td id="condition-4"></td>
+                    <td id="condition-5"></td>
+                </tr>
+                <tr>
+                    <td id="low-1"></td>
+                    <td id="low-2"></td>
+                    <td id="low-3"></td>
+                    <td id="low-4"></td>
+                    <td id="low-5"></td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <article>
+            <img src="images/sodaspringsnews.jpg" alt="Young woman playing an original tune on her guitar"
+                class="articleimg">
+            <h2>In The Aftermath of Geyser Song Day: Talented young people consider making music a career</h2>
+            <h3>by Melody Scout</h3>
+            <p>Food, music, and an original song contest: Geyser Song Day has been a local favourite for the people of
+                Soda Springs for the past fifteen years since its creation.</p>
+            <p>For some, it's a great way to appreciate the wonders of nature. For others, it's the perfect opportunity
+                to generate revenue from tourists joining us from all over the nation to see our glorious geysers. To Alicia
+                Crescendo, local artist and aspiring American Idol participant, it's all that and more ...</p>
+            <p><button
+                    onclick="window.location.href = '#';">Continue
+                    Reading Article...</button></p>
+        </article>
+        <br><br>
+        <div class="contact">
+            <p><strong>WTGI Weather</strong>
+                <br>321 Sesame Street
+                <br>Fish Haven, ID 83287</p>
+            <p> &#9742; 999.999.9999
+                <br>
+                &#9993; contact@wtgiweather.news
+            </p>
+            <div class="map"><img src="images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
+        </div>
+    </main>
+
+    <footer>
+        &copy;2019 WTGI Weather | <a href="attrib.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni
+            Shirley</a>
+        <div id='output'></div>
+        <script src="scripts/grabJSONsoda.js"></script>
+        <script src="scripts/hamburgermenu.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+</body>
+
+</html>

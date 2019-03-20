@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>WTGI Weather | Home</title>
+    <meta name="description" content="Home of WTGI Weather">
+
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 601px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 801px)" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="images/weather-2371967_960_720.png" alt="WTGI Logo">
+        <section class="headings">
+            <h1>WTGI Weather</h1>
+            <div class="motto">Way to Go, Idaho - Keeping Communities Connected since 2019</div>
+        </section>
+        <div class="conditions-home">
+            Please choose a city to view current conditions.
+        </div>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
+        <ul class="menu">
+            <li id="current-page"><a href="#">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="home-content-wrap">
+            <div class="item1">
+                <iframe
+                    src="https://www.google.org/crisismap/weather_and_events?hl=en&llbox=43.166%2C41.94%2C-110.862%2C-114.625&t=ROADMAP&layers=30%2C1%2C31%2C32%2C1340721332252%3A49%2C20%2C12%2Clayer9%2C2%2Clayer1%2C3%3A100"></iframe>
+            </div>
+            <div class="advisory">
+                <h2>Live Map</h2>
+                <h3>Provided by Google</h3>
+                <p>Please be advised of local weather conditions.</p>
+                <p>Use the Layers tab to filter map for clouds, percipitation, and storm information.</p>
+            </div>
+            <div class="item2 town-data">
+                <img src="images/preston.jpg" alt="The City of Preston, ID">
+            </div>
+            <div class="item3 town-data">
+                <img src="images/sodasprings.jpg" alt="Bear Lake, near Soda Springs, ID">
+            </div>
+            <div class="item4 town-data">
+                <img src="images/fishhaven.jpg" alt="The City of Preston, ID">
+            </div>
+        </div>
+
+        <br>
+        <h1>Gallery Spotlight</h1>
+
+        <div class="spotlight">
+            <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next"
+                onclick="plusSlides(1)">&#9654;</span>
+
+            <div class="image-subtitle-wrap">
+                <div class="mySlides fade">
+                    <img src="images/gallery-images/summer-789974_960_720.jpg" alt="Summer sunset over the prairie">
+                    <br>
+                    <strong>Sunset by Joe Schmoe</strong>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/gallery-images/hill-2165759_960_720.jpg"
+                        alt="Rolling brown hills in the countryside">
+                    <br>
+                    <strong>Countryside by by John Doe</strong>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="images/gallery-images/frozen-201495_960_720.jpg" alt="Frozen red berries in the winter">
+                    <br>
+                    <strong>Frozen Berries by Phil Foto</strong>
+                </div>
+            </div>
+            <br>
+            <button onclick="window.location.href = 'gallery.html'">Gallery</button>
+        </div>
+        <br>
+        <div class="button-box">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+
+        <br>
+        <h1>Contact Us</h1>
+        <div class="contact">
+            <p><strong>WTGI Weather</strong>
+                <br>321 Sesame Street
+                <br>Fish Haven, ID 83287</p>
+            <p> &#9742; 999.999.9999
+                <br>
+                &#9993; contact@wtgiweather.news
+            </p>
+            <div class="map"><img src="images/fishhavenmap.png" alt="Google Maps image of Fish Haven, Idaho"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy;2019 WTGI Weather | <a href="attrib.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni
+            Shirley</a>
+        <div id='output'></div>
+        <script src="scripts/hamburgermenu.js"></script>
+        <script src="scripts/towndata.js"></script>
+        <script src="scripts/galleryslides.js"></script>
+        <script src="scripts/currentdate.js"></script>
+    </footer>
+</body>
+
+</html>
