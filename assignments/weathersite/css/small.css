@@ -208,53 +208,77 @@ article p, h1, h2, h3, h4, h5 {
 }
 
 form {
-  color: #044389;
-  width: 50%;
-  min-width: 500px;
-  margin: 0 auto;
-  margin-bottom: 1rem;
-  padding: 20px;
-  background-color: #5995ED;
-  border: solid #FFAD05 1px;
-  display: grid;
+    color: #044389;
+    width: 50%;
+    min-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 20px;
+    background-color: #5995ED;
+    border: solid #FFAD05 1px;
+    display: grid
 }
 
 textarea#styled {
-  width: 85%;
-  height: 120px;
-  padding: 5px;
+    width: 100%;
+    max-width: 500px;
+    height: 120px;
+    padding: 5px
 }
 
 input {
-  margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 input[type=submit] {
-  background-color: #044389;
-  color: #FFF;
-  border: none;
-  padding: 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1rem;
+    background-color: #044389;
+    color: #FFF;
+    border: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem
+}
+
+input[type=file] {
+    background-color: #044389;
+    color: #FFF;
+    padding: 0 auto;
+    text-decoration: none;
+    margin: 2px auto;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem
+}
+
+input[type=submit]:hover {
+    background-color: #FFAD05
 }
 
 label {
-  font-weight: bold;
-  float: left;
-  clear: none;
-  padding: 2px 1em 0 0;
+    font-weight: 700;
+    float: left;
+    clear: both;
+    padding: 2px 1em 0 0
 }
 
 .radio {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between
 }
 
 .formblock {
-  display: block;
+    display: grid;
+    justify-content: space-between
+    grid-template: [row1-start] "label input"auto[row1-end]
+                            [row2-start] "label input"auto[row2-end]
+}
+
+.form-wrap {
+max-width: 500px;
+margin: 0 auto;
 }
 
 #rating {
@@ -276,6 +300,13 @@ button {
   display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+}
+
+button a {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 .gallery {

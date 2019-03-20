@@ -269,7 +269,8 @@ form {
 }
 
 textarea#styled {
-    width: 85%;
+    width: 100%;
+    max-width: 500px;
     height: 120px;
     padding: 5px
 }
@@ -285,6 +286,17 @@ input[type=submit] {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem
+}
+
+input[type=file] {
+    background-color: #044389;
+    color: #FFF;
+    padding: 0 auto;
+    text-decoration: none;
+    margin: 2px auto;
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem
@@ -307,7 +319,15 @@ label {
 }
 
 .formblock {
-    display: block
+    display: grid;
+    justify-content: space-between
+    grid-template: [row1-start] "label input"auto[row1-end]
+                            [row2-start] "label input"auto[row2-end]
+}
+
+.form-wrap {
+max-width: 500px;
+margin: 0 auto;
 }
 
 #rating {
@@ -329,6 +349,13 @@ button {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem
+}
+
+button a {
+    color: #FFF;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
 }
 
 button:hover {
