@@ -3,7 +3,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto Light', sans-serif;
-    text-align: center
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5 {
@@ -532,13 +532,12 @@ footer {
     line-height: 1rem;
     font-family: 'Raleway', sans-serif;
     width: auto;
-    margin: auto;
     padding: 1rem
 }
 
 footer a {
     color: #FFF;
-    text-decoration: none
+    text-decoration: none;
 }
 
 footer a:hover {
