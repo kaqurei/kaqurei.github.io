@@ -30,7 +30,7 @@ function townFishHaven(jsonObj) {
 //* Request Current Weather data from OpenWeatherMap
 
 let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?zip=83287,us&units=imperial&APPID=0b25c1f6d23d52987a6d10f8c21a31e6';
+let apiURLstring = 'https://api.openweathermap.org/data/2.5/weather?lat=42.036781&lon=-111.395362&units=imperial&APPID=0b25c1f6d23d52987a6d10f8c21a31e6';
 weatherRequest.open('Get', apiURLstring, true);
 weatherRequest.send();
 
@@ -77,10 +77,10 @@ function windChill(tempF, speed) {
 }
 
 
-//* Get Forecast data from OpenWeatherMap
+//* Get Forecast data from OpenWeatherMap  
 
 let forecastRequest = new XMLHttpRequest();
-let forecastApiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?zip=83287,us&units=imperial&APPID=0b25c1f6d23d52987a6d10f8c21a31e6';
+let forecastApiURLstring = 'https://api.openweathermap.org/data/2.5/forecast?lat=42.036781&lon=-111.395362&units=imperial&APPID=0b25c1f6d23d52987a6d10f8c21a31e6';
 forecastRequest.open('Get', forecastApiURLstring, true);
 forecastRequest.send();
 
