@@ -299,7 +299,6 @@ input[type=submit] {
 input[type=file] {
     background-color: #044389;
     color: #FFF;
-    padding: 0 auto;
     text-decoration: none;
     margin: 2px auto;
     display: inline-block;
@@ -325,9 +324,9 @@ label {
 
 .formblock {
     display: grid;
-    justify-content: space-between
+    justify-content: space-between;
     grid-template: [row1-start] "label input"auto[row1-end]
-                            [row2-start] "label input"auto[row2-end]
+                            [row2-start] "label input"auto[row2-end];
 }
 
 .form-wrap {
@@ -414,8 +413,6 @@ figure img {
   margin: 0 auto;
   background-color: #5995ED;
   display: grid;
-  grid-template-columns: 1 2 3;
-  grid-template-rows: 1 2 3 4;
 }
 
 .spotlight button {
