@@ -1,0 +1,90 @@
+body {
+margin: 0px auto;
+max-width: 800px;
+}
+
+header {
+display: flex;
+justify-content: flex-end;
+flex-wrap: wrap;
+}
+
+header h1 {
+padding-right: 1em;
+}
+
+.third-comment {
+display: block;
+}
+
+#menu-link {
+display: none;
+}
+
+nav {
+    color: #FFF;
+    background-color: #D8D0C1;
+    font-size: 1.5em;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #D8D0C1;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  max-height: 2em;
+}
+
+li {
+ display: inline;
+ float: left;
+}
+
+li:hover {
+background-color: #FFFBFE;
+}
+
+li a {
+display: block;
+color: #012A36;
+  text-align: center;
+  text-decoration: none;
+font-size: 1rem;
+}
+
+li:hover a {
+color: #FFAD05;
+}
+
+#current-page a:hover {
+color: #FFAD05;
+}
+
+.menu {
+list-style: none;
+padding-inline-start: 0px;
+display: inline;
+}
+
+.testimonials {
+display: grid;
+  grid-template-areas: 
+    "div div div";
+grid-gap: 20px 50px;
+margin: 20px;
+}
+
+.testimonials img {
+display: block;
+border-radius: 50%;
+max-width: 150px;
+margin-bottom: 5px;
+margin-left: 5px;
+}
