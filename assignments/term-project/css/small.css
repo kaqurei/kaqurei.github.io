@@ -11,6 +11,10 @@ body  {
    text-align: center;
 }
 
+#welcome-image {
+   display: none;
+}
+
 p {
 margin: 20px;
 line-height: 1.2rem;
@@ -19,15 +23,22 @@ line-height: 1.2rem;
 h1, h2, h3, h4, h5 {
    font-family: 'Great Vibes', sans-serif;
    color: #012A36;
-   font-size: 2em;
+   font-size: 3em;
 }
 
 h1 {
 color: #FFFBFE;
+font-size: 2.5em;
 margin-top: 20px;
 }
 
+picture {
+   margin: 0px;
+   display: block;
+}
+
 header {
+   margin: 0px;
 background-color: #CBB8A9;
 display: flex;
 justify-content: center;
@@ -45,11 +56,14 @@ width: 100%;
 nav {
 background-color: #D8D0C1;
 margin-bottom: 10px;
+padding: 15px;
 }
 
 nav a {
 color: #012A36;
 text-decoration: none;
+font-size: 1.5rem;
+margin: 10px;
 }
 
 nav li {

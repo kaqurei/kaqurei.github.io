@@ -1,34 +1,57 @@
 body {
-margin: 0px auto;
-max-width: 800px;
+  margin: 0px auto;
+  max-width: 800px;
+}
+
+#welcome-image {
+  float: left;
+  margin-right: 25px;
+  display: block;
+  box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+  border-radius: 50%;
+  flex-shrink: 1;
+}
+
+.welcome-wrap {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 header {
-display: flex;
-justify-content: flex-end;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
 }
 
 header h1 {
-padding-right: 1em;
+  font-size: 4rem;
+  padding-right: 1em;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .third-comment {
-display: block;
+  display: block;
 }
 
 #menu-link {
-display: none;
+  display: none;
 }
 
 nav {
-    color: #FFF;
-    background-color: #D8D0C1;
-    font-size: 1.5em;
-    line-height: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+  color: #FFF;
+  background-color: #D8D0C1;
+  font-size: 1.5em;
+  line-height: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0px;
+  margin-bottom: 25px;
+}
+
+nav a {
+  margin: 0px;
 }
 
 ul {
@@ -36,55 +59,69 @@ ul {
   margin: 0;
   overflow: hidden;
   background-color: #D8D0C1;
-  position: -webkit-sticky; /* Safari */
+  position: -webkit-sticky;
+  /* Safari */
   position: sticky;
   top: 0;
   max-height: 2em;
 }
 
 li {
- display: inline;
- float: left;
+  display: inline;
+  float: left;
 }
 
 li:hover {
-background-color: #FFFBFE;
+  background-color: #FFFBFE;
 }
 
 li a {
-display: block;
-color: #012A36;
+  display: block;
+  color: #012A36;
   text-align: center;
   text-decoration: none;
-font-size: 1rem;
+  font-size: 1rem;
 }
 
 li:hover a {
-color: #FFAD05;
+  color: #FFAD05;
 }
 
 #current-page a:hover {
-color: #FFAD05;
+  color: #FFAD05;
 }
 
 .menu {
-list-style: none;
-padding-inline-start: 0px;
-display: inline;
+  list-style: none;
+  padding-inline-start: 0px;
+  display: inline;
 }
 
 .testimonials {
-display: grid;
-  grid-template-areas: 
+  max-width: 800px;
+  display: grid;
+  grid-template-areas:
     "div div div";
-grid-gap: 20px 50px;
-margin: 20px;
+  grid-gap: 20px 50px;
+}
+
+.testimonials-wrap {
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .testimonials img {
-display: block;
-border-radius: 50%;
-max-width: 150px;
-margin-bottom: 5px;
-margin-left: 5px;
+  display: block;
+  border-radius: 50%;
+  max-width: 200px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.img-wrap {
+  margin: 0 auto;
+}
+
+footer {
+  font-size: 1rem;
 }
