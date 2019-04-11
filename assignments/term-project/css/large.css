@@ -8,34 +8,57 @@ nav li a {
   margin: 0 25px 0 25px;
 }
 
-.welcome-wrap {
+section {
   max-width: 900px;
 }
 
-.testimonials-wrap {
-  max-width: 900px;
+section a:hover, .mySlides a:hover {
+  color: #FFAD05;
 }
 
-.testimonials {
-  grid-gap: 70px 90px;
-}
-
-.parallax { 
-  /* The image used */
-  background-image: url("images/hotel-large.jpg");
-
-  /* Set a specific height */
-  height: 500px; 
-
-  /* Create the parallax scrolling effect */
+.parallax {
+  position: initial;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-large.jpg");
+  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: grid;
+  justify-items: center;
+}
 
-  opacity: 0.5;
+.parallax button {
+  justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+button:hover {
+  color: #FFAD05;
+  background-color: #FFF;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #012A36;
 }
 
 .img-wrap {
   display: none;
+}
+
+.mySlides {
+  max-width: 900px;
+}
+
+.mySlides picture img {
+  max-width: 800px;
+}
+
+.testimonials img {
+  max-width: 200px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }

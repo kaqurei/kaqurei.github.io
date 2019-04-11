@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" media="screen and (min-width: 700px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/medium.css">
     <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/large.css">
 </head>
 
 <body>
-    <picture class="welcome-image">
-        <source srcset="images/abor-large-01.svg" media="(max-width: 600px)">
+    <picture>
+        <source srcset="images/abor-large-01.svg" media="(max-width: 399px)">
         <img class="hero-img" src="images/abor-large-02.svg" alt="A peaceful bench in the Inn Gardens">
     </picture>
     <header>
@@ -33,68 +33,151 @@
             <li><a href="#">Book Reservation</a></li>
         </ul>
     </nav>
-
     <main>
-        <div class="welcome-wrap">
-            <img id="welcome-image" src="images\temple1.jpg">
-            <div class="text-wrap">
-                <h2>Welcome to Temple Inn & Suites</h2>
-                <p>President Gordon B Hinkley said of Temples, “This is a place of light, a place of peace, a place of
-                    love, where we deal with the things of eternity.” And certainly, his words cannot be denied. All
-                    people who
-                    have ever visited the Temples can testify of the sweet spirit and peace that they feel there. Yet,
-                    many have to
-                    travel great distances to come and partake in the spirit of this great work.
-                </p>
-                <p>
-                    Our vision at Temple Inn and Suites is to make your stay as comfortable and stress free as
-                    possible--whether you come for a few days to participate in a family members'
-                    wedding, or many months and even years as you serve as a Temple Worker. We are conveniently located
-                    just outside Temple grounds in
-                    select locations to make your commute as short as possible. Please visit our guest portals to learn
-                    more about accomodations and services
-                    a Temple Inn near you.</p>
-            </div>
-        </div>
-    </main>
-
-    <div class="hero-image">
-        <div class="hero-text"><h5>&ldquo;Come unto me, all ye that labour and are heavy laden, and I will give you rest...&rdquo; - Matthew 11:28</h5></div>
-        <div class="parallax"></div>
-        <div class="img-wrap">
-            <picture>
-                <source srcset="images/hotel-small.jpg" media="(max-width: 600px)">
-                <img class="hero-img" src="images/hotel-large.jpg" alt="The luxious interior of Temple Inn & Suites">
-            </picture>
-        </div>
-    </div>
-    <main>
-        <div class="testimonials-wrap">
-            <h2>Testimonials</h2>
-            <div class="testimonials">
-                <div class="comment-wrap">
-                    <img src="images/senmis.jpg" alt="Senior missionary couple serving near a Temple">
-                    <p>&ldquo;Ipsum dolor sit amet!&rdquo;</p>
-                    <p class="name-wrap">- Jane Doe</p>
-                </div>
-                <div class="comment-wrap">
-                    <img src="images/senmis.jpg" alt="Senior missionary couple serving near a Temple">
-                    <p>&ldquo;Ipsum dolor sit amet!&rdquo;</p>
-                    <p class="name-wrap">- Jane Doe</p>
-                </div>
-                <div class="comment-wrap third-comment">
-                    <img src="images/senmis.jpg" alt="Senior missionary couple serving near a Temple">
-                    <p>&ldquo;Ipsum dolor sit amet!&rdquo;</p>
-                    <p class="name-wrap">- Jane Doe</p>
+        <section>
+            <div class="welcome-wrap">
+                <img id="welcome-image" src="images/temple1.jpg" alt="A view of the Temple from the hotel front.">
+                <div class="text-wrap">
+                    <h2>Welcome to Temple Inn & Suites</h2>
+                    <p>President Gordon B Hinkley said of Temples, “This is a place of light, a place of peace, a place
+                        of
+                        love, where we deal with the things of eternity.” And certainly, his words cannot be denied. All
+                        people who
+                        have ever visited the Temples can testify of the sweet spirit and peace that they feel there.
+                        Yet,
+                        many have to
+                        travel great distances to come and partake in the spirit of this great work.
+                    </p>
+                    <p>
+                        Our vision at Temple Inn and Suites is to make your stay as comfortable and stress free as
+                        possible--whether you come for a few days to participate in a family members'
+                        wedding, or many months and even years as you serve as a Temple Worker. We are conveniently
+                        located
+                        just outside Temple grounds in
+                        select locations to make your commute as short as possible. Please visit our guest portals to
+                        learn
+                        more about accomodations and services
+                        a Temple Inn near you.</p>
                 </div>
             </div>
+        </section>
+
+        <div class="hero-image">
+            <div class="hero-text">
+                <h5>&ldquo;Come unto me, all ye that labour and are heavy laden, and I will give you rest...&rdquo; -
+                    Matthew 11:28</h5>
+            </div>
+            <div class="parallax"><button>Book Now</button> </div>
         </div>
+
+        <section>
+            <h2>Featured Temple</h2>
+            <div class="featured-wrap">
+                <picture>
+                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
+                    <img src="images/jordan-river-temple-large.jpg" class="featured-temple"
+                        alt="A view of the Jordan River Temple">
+                </picture>
+                <h3>Jordan River, Utah</h3>
+                <p>The beautiful Jordan River Utah Temple was the seventh temple built in Utah, dedicated unto the Lord
+                    in 1981. Marion G. Romney, a member of the church's First Presidency, dedicated the Jordan River
+                    Temple in fifteen sessions held during November 16–20, 1981. More than 160,000 members attended the
+                    dedicatory services. Thirty of those in attendance at the dedication were elderly men and women who
+                    had been at the historic dedication of the first temple in the Salt Lake Valley, the Salt Lake
+                    Temple. Most had been very young at the time but still remembered the event. It was closed for
+                    extensive renovations in August 2015, and rededicated three years later in May 2018 by President
+                    Henry B Eyring of the First Presidency.</p> 
+                    <p><button>More Temples</button></p>
+            </div>
+        </section>
+
+        <div class="spotlight">
+            <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next"
+                onclick="plusSlides(1)">&#9654;</span>
+
+            <div class="mySlides fade">
+                <h2>Services</h2>
+                <picture>
+                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
+                    <img src="images/family-history-large.jpg"
+                        alt="A sister missionary helps woman to find geneology information in the computer lab">
+                </picture>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p> 
+                    <p><button>Learn More</button></p>
+            </div>
+
+            <div class="mySlides fade">
+                <h2>Services</h2>
+                <picture>
+                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
+                    <img src="images/family-history-large.jpg"
+                        alt="A sister missionary helps woman to find geneology information in the computer lab">
+                </picture>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p><button>Learn More</button></p>
+            </div>
+
+            <div class="mySlides fade">
+                <h2>Services</h2>
+                <picture>
+                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
+                    <img src="images/family-history-large.jpg"
+                        alt="A sister missionary helps woman to find geneology information in the computer lab">
+                </picture>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <p><button>Learn More</button></p>
+            </div>
+        </div>
+        <br>
+        <div class="dotbox">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <section>
+            <div class="testimonials-wrap">
+                <h2>Testimonials</h2>
+                <div class="testimonials">
+                    <div class="comment-wrap">
+                        <img src="images/senmis.jpg" alt="Senior missionary couple serving near a Temple.">
+                        <p>&ldquo;Temple Inn & Suites gave us the freedom to focus on the Lord's work.&rdquo;</p>
+                        <p class="name-wrap">- The Wilsons</p>
+                    </div>
+                    <div class="comment-wrap third-comment">
+                        <img src="images/family.jpg" alt="Parents and two children pose for a family photo.">
+                        <p>&ldquo;Exceptional service. Will come again!&rdquo;</p>
+                        <p class="name-wrap">- The Roberts</p>
+                    </div>
+                    <div class="comment-wrap">
+                        <img src="images/johndoe.jpg" alt="The groom in a tuxedo on the beach.">
+                        <p>&ldquo;The perfect solution for our friends and family travelling to participate in our
+                            wedding.&rdquo;</p>
+                        <p class="name-wrap">- John Doe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <footer>
-        &copy;2019 Temple Inn & Suites | <a href="attributions.html">Attributions</a> | <a
-            href="https://kaqurei.github.io/">Destyni Shirley</a>
+        &copy;2019 Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Visitor Policies</a>
+        <p class="sub-footer"><a href="attributions.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni Shirley</a></p>
         <script src="js/hamburgermenu.js"></script>
+        <script src="js/galleryslides.js"></script>
     </footer>
 </body>
 

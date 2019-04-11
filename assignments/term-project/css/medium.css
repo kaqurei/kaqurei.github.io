@@ -3,6 +3,12 @@ body {
   max-width: 800px;
 }
 
+h5 {
+  font-size: 2em;
+  text-align: right;
+  margin-right: 1rem;
+}
+
 #welcome-image {
   float: left;
   margin-right: 25px;
@@ -12,9 +18,26 @@ body {
   flex-shrink: 1;
 }
 
-.welcome-wrap {
+section {
   max-width: 800px;
   margin: 0 auto;
+}
+
+.spotlight {
+grid-template-columns: auto 1fr auto;
+}
+
+.spotlight h2 {
+margin-left: 25px;
+margin-top: 15px;
+}
+
+.mySlides {
+  max-width: 800px;
+}
+
+.mySlides picture img {
+  max-width: 400px;
 }
 
 header {
@@ -89,12 +112,7 @@ li:hover a {
 
 .menu {
   list-style: none;
-  padding-inline-start: 0px;
   display: inline;
-}
-
-.hero-image {
-  margin: 0 auto;
 }
 
 .testimonials {
@@ -102,18 +120,17 @@ li:hover a {
   display: grid;
   grid-template-areas:
     "div div div";
-  grid-gap: 20px 50px;
+      grid-gap: 70px 5%;
 }
 
-.testimonials-wrap {
-  margin: 0 auto;
-  max-width: 800px;
+.testimonials-wrap h2 {
+ margin-left: 25px;
 }
 
 .testimonials img {
+  max-width: 150px;
   display: block;
   border-radius: 50%;
-  max-width: 200px;
   margin-bottom: 5px;
   margin-left: 5px;
 }
@@ -125,6 +142,18 @@ li:hover a {
 .img-wrap {
   max-width: none;
   margin: 0 auto;
+}
+
+.parallax {
+  height: 400px;
+}
+
+.parallax button {
+  justify-self: center;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 footer {
