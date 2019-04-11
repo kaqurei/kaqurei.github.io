@@ -4,13 +4,20 @@ body {
 }
 
 nav li a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0 25px 0 25px;
 }
 
 section {
   max-width: 900px;
 }
+
+.two-column {
+  display: grid;
+  grid-template-columns: 5fr 5fr;
+  grid-gap: 25px;
+  max-width: 900px;
+ }
 
 section a:hover, .mySlides a:hover {
   color: #FFAD05;

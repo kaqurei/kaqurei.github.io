@@ -19,8 +19,12 @@ body {
 }
 
 section {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
+}
+
+.two-column {
+  max-width: 600px;
 }
 
 .spotlight {
