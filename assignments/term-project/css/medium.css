@@ -120,6 +120,11 @@ nav li:hover a {
   display: inline;
 }
 
+.featured-temple {
+  width: 100%;
+  max-width: 664px;
+}
+
 .testimonials {
   max-width: 800px;
   display: grid;
