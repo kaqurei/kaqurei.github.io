@@ -29,16 +29,17 @@ p {
 }
 
 h1, h2, h3, h4 {
-   font-family: 'Great Vibes', sans-serif;
+   font-family: 'Great Vibes', cursive, sans-serif;
    color: #012A36;
    font-size: 3em;
 }
 
-h5 {
+.quote {
    font-size: 1.5rem;
+   font-weight: bolder;
    text-align: center;
    padding: 5px 3rem 5px 3rem;
-   font-family: 'Great Vibes', sans-serif;
+   font-family: 'Great Vibes', cursive, sans-serif;
    color: #012A36;
 }
 
@@ -49,7 +50,7 @@ h1 {
    margin-top: 20px;
 }
 
-section a, .mySlides a {
+.mySlides a {
    font-size: 1.5rem;
    font-weight: bold;
    text-align: center;
@@ -152,12 +153,16 @@ button {
 
 .parallax button {
    font-size: 1.5rem;
+}
+
+.parallax form {
    justify-self: center;
    grid-column-start: 1;
    grid-column-end: 1;
    grid-row-start: 2;
    grid-row-end: 2;
 }
+
 .parallax {
    position: static;
    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-small.jpg");
@@ -178,6 +183,13 @@ button {
    display: grid;
    grid-template-columns: auto auto auto;
    grid-template-rows: 1fr;
+ }
+
+ .spotlight-head {
+   grid-column-start: 2;
+   grid-row-start: 1;
+   background-color: #CBB8A9;
+   width: 100%;
  }
 
  .mySlides {

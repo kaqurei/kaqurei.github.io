@@ -47,6 +47,10 @@ button:hover {
   display: none;
 }
 
+.spotlight-head {
+  max-width: 900px;
+}
+
 .mySlides {
   max-width: 900px;
 }

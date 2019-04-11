@@ -17,7 +17,7 @@
 
 <body>
     <picture>
-        <source srcset="images/abor-large-01.svg" media="(max-width: 399px)">
+        <source srcset="images/abor-large-01.svg" media="(max-width: 600px)">
         <img class="hero-img" src="images/abor-large-02.svg" alt="A peaceful bench in the Inn Gardens">
     </picture>
     <header>
@@ -28,9 +28,9 @@
         <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
         <ul class="menu">
             <li id="current-page"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Guest Portal</a></li>
-            <li><a href="#">Book Reservation</a></li>
+            <li><a href="temples.html">Temples</a></li>
+            <li><a href="guest-portal.html">Guest Portal</a></li>
+            <li><a href="reservation.html">Book Reservation</a></li>
         </ul>
     </nav>
     <main>
@@ -64,10 +64,11 @@
 
         <div class="hero-image">
             <div class="hero-text">
-                <h5>&ldquo;Come unto me, all ye that labour and are heavy laden, and I will give you rest...&rdquo; -
-                    Matthew 11:28</h5>
+                <div class="quote">&ldquo;Come unto me, all ye that labour and are heavy laden, and I will give you
+                    rest...&rdquo; -
+                    Matthew 11:28</div>
             </div>
-            <div class="parallax"><button>Book Now</button> </div>
+            <div class="parallax"><form action="reservation.html"><button>Book Now</button></form> </div>
         </div>
 
         <section>
@@ -86,8 +87,8 @@
                     had been at the historic dedication of the first temple in the Salt Lake Valley, the Salt Lake
                     Temple. Most had been very young at the time but still remembered the event. It was closed for
                     extensive renovations in August 2015, and rededicated three years later in May 2018 by President
-                    Henry B Eyring of the First Presidency.</p> 
-                    <p><button>More Temples</button></p>
+                    Henry B Eyring of the First Presidency.</p>
+                <p><form action="temples.html"><button>More Temples</button></form></p>
             </div>
         </section>
 
@@ -95,23 +96,11 @@
             <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next"
                 onclick="plusSlides(1)">&#9654;</span>
 
-            <div class="mySlides fade">
-                <h2>Services</h2>
-                <picture>
-                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
-                    <img src="images/family-history-large.jpg"
-                        alt="A sister missionary helps woman to find geneology information in the computer lab">
-                </picture>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum."</p> 
-                    <p><button>Learn More</button></p>
+            <div class="spotlight-head">
+                <h2>Featured Services</h2>
             </div>
 
             <div class="mySlides fade">
-                <h2>Services</h2>
                 <picture>
                     <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
                     <img src="images/family-history-large.jpg"
@@ -122,11 +111,10 @@
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <p><button>Learn More</button></p>
+                <p><form action="guest-portal.html"><button>Learn More</button></form></p>
             </div>
 
             <div class="mySlides fade">
-                <h2>Services</h2>
                 <picture>
                     <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
                     <img src="images/family-history-large.jpg"
@@ -137,7 +125,21 @@
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum."</p>
-                    <p><button>Learn More</button></p>
+                <p><form action="guest-portal.html"><button>Learn More</button></form></p>
+            </div>
+
+            <div class="mySlides fade">
+                <picture>
+                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
+                    <img src="images/family-history-large.jpg"
+                        alt="A sister missionary helps woman to find geneology information in the computer lab">
+                </picture>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p><form action="guest-portal.html"><button>Learn More</button></form></p>
             </div>
         </div>
         <br>
@@ -159,7 +161,7 @@
                     <div class="comment-wrap third-comment">
                         <img src="images/family.jpg" alt="Parents and two children pose for a family photo.">
                         <p>&ldquo;Exceptional service. Will come again!&rdquo;</p>
-                        <p class="name-wrap">- The Roberts</p>
+                        <p class="name-wrap">- The Adams Family</p>
                     </div>
                     <div class="comment-wrap">
                         <img src="images/johndoe.jpg" alt="The groom in a tuxedo on the beach.">
@@ -174,10 +176,11 @@
     </main>
 
     <footer>
-        &copy;2019 Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Visitor Policies</a>
-        <p class="sub-footer"><a href="attributions.html">Attributions</a> | <a href="https://kaqurei.github.io/">Destyni Shirley</a></p>
-        <script src="js/hamburgermenu.js"></script>
-        <script src="js/galleryslides.js"></script>
+        &copy;2019 Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Visitor
+            Policies</a>
+        <p class="sub-footer"><a href="attributions.html">Attributions</a> | <a
+                href="https://kaqurei.github.io/">Destyni Shirley</a></p>
+        <script src="js/main-script.js"></script>
     </footer>
 </body>
 
