@@ -52,7 +52,7 @@ request.onload = function () {
     templeFeatured(templeData);
 }
 
-//* Function to write temple data onto page; loop through JSON to find town name, then write header and events in townEventsPreston article.
+//* FEATURED TEMPLE
 
 function templeFeatured(jsonObj) {
     var temples = jsonObj['temples']
@@ -62,7 +62,7 @@ function templeFeatured(jsonObj) {
     for (i = 0; i < temples.length; i++) {
         var featured = temples[i].featured;
         if (featured == "Yes") {
-            var image = "<source srcset='" + temples[i].imageSrcSmall + "media='(max-width: 600px)'> <img src='" + temples[i].imageSrc + "class='featured' alt='" + temples[i].imageAlt + "'>";
+            var image = "<source srcset='" + temples[i].imageSrcSmall + "' media='(max-width: 600px)'> <img src='" + temples[i].imageSrc + "' class='featured' alt='" + temples[i].imageAlt + "'>";
             document.getElementById("featuredImage").innerHTML = image;
         var title = temples[i].name;
         document.getElementById("featuredTitle").innerHTML = title;

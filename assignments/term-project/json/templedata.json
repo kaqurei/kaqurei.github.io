@@ -1,8 +1,8 @@
 {
   "temples": [{
       "featured": "Yes",
-      "imageSrc": "https://kaqurei.github.io/assignments/term-project/images/jordan-river-temple-small.jpg",
-      "imageSrcSmall": "https://kaqurei.github.io/assignments/term-project/images/jordan-river-temple-large.jpg",
+      "imageSrc": "https://kaqurei.github.io/assignments/term-project/images/jordan-river-temple-large.jpg",
+      "imageSrcSmall": "https://kaqurei.github.io/assignments/term-project/images/jordan-river-temple-small.jpg",
       "imageAlt": "A view of the Jordan River Temple",
       "name": "Jordan River",
       "description": "The beautiful Jordan River Utah Temple was the seventh temple built in Utah, dedicated unto the Lord in 1981. Marion G. Romney, a member of the church's First Presidency, dedicated the Jordan River Temple in fifteen sessions held during November 16-20, 1981. More than 160,000 members attended the dedicatory services. Thirty of those in attendance at the dedication were elderly men and women who had been at the historic dedication of the first temple in the Salt Lake Valley, the Salt Lake Temple.Most had been very young at the time but still remembered the event. It was closed for extensive renovations in August 2015, and rededicated three years later in May 2018 by President Henry B Eyring of the First Presidency.",
