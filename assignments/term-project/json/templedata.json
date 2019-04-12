@@ -1,6 +1,9 @@
 {
   "temples": [{
       "featured": "Yes",
+      "imageSrc": "https://kaqurei.github.io/assignments/term-project/images/jordan-river-temple-small.jpg",
+      "imageSrcSmall": "https://kaqurei.github.io/assignments/term-project/images/jordan-river-temple-large.jpg",
+      "imageAlt": "A view of the Jordan River Temple",
       "name": "Jordan River",
       "description": "The beautiful Jordan River Utah Temple was the seventh temple built in Utah, dedicated unto the Lord in 1981. Marion G. Romney, a member of the church's First Presidency, dedicated the Jordan River Temple in fifteen sessions held during November 16-20, 1981. More than 160,000 members attended the dedicatory services. Thirty of those in attendance at the dedication were elderly men and women who had been at the historic dedication of the first temple in the Salt Lake Valley, the Salt Lake Temple.Most had been very young at the time but still remembered the event. It was closed for extensive renovations in August 2015, and rededicated three years later in May 2018 by President Henry B Eyring of the First Presidency.",
       "phoneNumber": "(+1) 801-254-3003",
@@ -14,6 +17,8 @@
 
     {
       "featured": "No",
+      "imageSrc": "https://kaqurei.github.io/assignments/term-project/images/salt-lake-temple-small.jpg",
+      "imageSrcSmall": "https://kaqurei.github.io/assignments/term-project/images/salt-lake-temple-large.jpg",
       "name": "Salt Lake",
       "description": "The Salt Lake City Utah Temple took 40 years to build, with its highly ornate interior being completed in just a year. It was the only temple dedicated by President Wilford Woodruff, in April 1893. Positioned on Salt Lake City's center block, known as Temple Square, the spires of the Salt Lake Temple rise amid downtown high-rises and super malls. Every holiday season, Temple Square is transformed into a highly popular display of hundreds of thousands of Christmas lights. In General Conference April 2019, President Russel M Nelson announced that the Salt Lake Temple will be closing for extensive renovations.",
       "phoneNumber": "(1) 801-240-2640",
@@ -28,6 +33,8 @@
 
     {
       "featured": "No",
+      "imageSrc": "https://kaqurei.github.io/assignments/term-project/images/draper-temple-small.jpg",
+      "imageSrcSmall": "https://kaqurei.github.io/assignments/term-project/images/draper-temple-large.jpg",
       "name": "Draper",
       "description": "The Draper Utah Temple was the twelfth temple built in Utah and the third built in the Salt Lake Valley, following the Salt Lake Temple and the Jordan River Temple. It was dedicated in March 2009 by Thomas S. Monson. During its two-month open house, 684,721 visitors toured the interior of the Draper Utah Temple, making it one of the most widely attended temple open houses in the Church.",
       "phoneNumber": "(1) 801-576-4240",
@@ -41,6 +48,8 @@
 
     {
       "featured": "No",
+      "imageSrc": "https://kaqurei.github.io/assignments/term-project/images/tooele-valley-temple-small.jpg",
+      "imageSrcSmall": "https://kaqurei.github.io/assignments/term-project/images/tooele-valley-temple-large.jpg",
       "name": "Tooele Valley",
       "description": "The Tooele Valley Temple was announced in the Sunday afternoon session of General Conference, April 2019, by President Russel M Nelson. Details forthcoming.",
       "phoneNumber": "TBA",

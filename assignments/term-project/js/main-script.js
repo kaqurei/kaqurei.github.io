@@ -40,3 +40,34 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+var requestURL = 'https://kaqurei.github.io/assignments/term-project/json/templedata.json';
+var request = new XMLHttpRequest();
+
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+request.onload = function () {
+    var templeData = request.response;
+    templeFeatured(templeData);
+}
+
+//* Function to write temple data onto page; loop through JSON to find town name, then write header and events in townEventsPreston article.
+
+function templeFeatured(jsonObj) {
+    var temples = jsonObj['temples']
+    var i = 0;
+    var featured = temples[i].featured;
+
+    for (i = 0; i < temples.length; i++) {
+        var featured = temples[i].featured;
+        if (featured == "Yes") {
+            var image = "<source srcset='" + temples[i].imageSrcSmall + "media='(max-width: 600px)'> <img src='" + temples[i].imageSrc + "class='featured' alt='" + temples[i].imageAlt + "'>";
+            document.getElementById("featuredImage").innerHTML = image;
+        var title = temples[i].name;
+        document.getElementById("featuredTitle").innerHTML = title;
+        var description = temples[i].description;
+        document.getElementById("featuredDescription").innerHTML = description;
+        }
+    }
+}

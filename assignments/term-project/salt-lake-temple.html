@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Temple Inn & Suites | Temples | Salt Lake Utah Temple</title>
+    <meta name="description" content="Information regarding Salt Lake Utah Temple.">
+
+    <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/large.css">
+</head>
+
+<body>
+    <picture>
+        <source srcset="images/abor-large-01.svg" media="(max-width: 600px)">
+        <img class="hero-img" src="images/abor-large-02.svg" alt="A peaceful bench in the Inn Gardens">
+    </picture>
+    <header>
+        <h1>Temple Inn & Suites</h1>
+    </header>
+
+    <nav>
+        <a id="menu-link" onclick="hamburgerMenu()">&#9776; Menu</a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li id="current-page"><a href="temples.html">Temples</a></li>
+            <li><a href="guest-portal.html">Guest Portal</a></li>
+            <li><a href="reservation.html">Book Reservation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <div class="hero-text">
+                <div class="quote">
+                    &ldquo;And they pitched their tents round about the temple, every man having his tent with
+                    the door thereof towards the temple...&rdquo; - Mosiah 2:6
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Salt Lake Utah Temple</h2>
+            <picture>
+                <source srcset="images/breakfast-small.jpg" media="(max-width: 600px)">
+                <img src="images/breakfast-large.jpg" alt="A view of the Salt Lake Utah Temple">
+            </picture>
+            <ul>
+                <li><strong>Phone:</strong> <span id="phone"></span></li>
+                <li><strong>Location:</strong> <span id="address"></span></li>
+                <li><strong></strong></li>
+            </ul>
+
+            <h3>Current Weather</h3>
+            <img class="conditions-img" id="conditions-icon" src="placeholder.gif"
+            alt="If this image is displayed, the javascript failed to load data from the API.">
+        <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
+
+            <p><strong>Condition:</strong> <span id="current-weather"></span></p>
+            <p><strong>High:</strong> <span id="temp-high"></span>&deg;</p>
+            <p><strong>Wind Chill:</strong> <span id="windChill"></span>&deg;</p>
+            <p><strong>Humidity:</strong> <span id="humid"></span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> MPH</p>
+        </section>
+
+        </div>
+        <section class="center">
+            <a href="salt-lake-temple.html">Salt Lake Temple</a> | <a href="jordan-river-temple.html">Jordan River
+                Temple</a> | <a href="draper-temple.html">Draper Temple</a> | <a href="tooele-valley-temple.html">Tooele
+                Valley Temple</a>
+        </section>
+    </main>
+    <footer>
+        &copy;2019 Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Guest
+            Policies</a>
+        <p class="sub-footer"><a href="attributions.html">Attributions</a> | <a
+                href="https://kaqurei.github.io/">Destyni Shirley</a></p>
+        <script src="js/menu-script.js"></script>
+        <script src="js/salt-lake-data.js"></script>
+    </footer>
+</body>
+
+</html>
