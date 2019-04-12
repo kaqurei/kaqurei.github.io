@@ -19,6 +19,8 @@ function templeSaltLake(jsonObj) {
   for (i = 0; i < temples.length; i++) {
     var name = temples[i].name;
     if (name == "Salt Lake") {
+           var image = "<source srcset='" + temples[i].imageSrcSmall + "' media='(max-width: 600px)'> <img src='" + temples[i].imageSrc + "' class='featured' alt='" + temples[i].imageAlt + "'>";
+            document.getElementById("templeImage").innerHTML = image;
       var phone = temples[i].phoneNumber;
       document.getElementById("phone").innerHTML = phone;
       var address = temples[i].streetAddress + ", " + temples[i].cityState + " " + temples[i].zip;
