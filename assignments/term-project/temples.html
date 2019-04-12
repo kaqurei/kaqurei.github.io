@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Temple Inn & Suites | Temples</title>
-    <meta name="description"
-        content="Information regarding Temple locations near Temple Inn & Suites.">
+    <meta name="description" content="Information regarding Temple locations near Temple Inn & Suites.">
 
     <link rel="stylesheet" href="https://kaqurei.github.io/css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
@@ -35,7 +34,93 @@
         </ul>
     </nav>
     <main>
-        Content Here
+        <section>
+            <div class="hero-text">
+                <div class="quote">
+                    &ldquo;And they pitched their tents round about the temple, every man having his tent with
+                    the door thereof towards the temple...&rdquo; - Mosiah 2:6
+                </div>
+            </div>
+        </section>
+        <div class="spotlight">
+            <span class="prev" onclick="plusSlides(-1)">&#9664;</span> <span class="next"
+                onclick="plusSlides(1)">&#9654;</span>
+            <div class="spotlight-head">
+                <h2>Temples</h2>
+                <p>While we hope to someday service Temple patrons at every Temple location, we currently only service
+                    four areas.
+                    Please see the visit the pages below for more details on each Temple.</p>
+            </div>
+
+            <div class="mySlides fade">
+                <picture>
+                    <source srcset="images/family-history-small.jpg" media="(max-width: 600px)">
+                    <img src="images/family-history-large.jpg"
+                        alt="A sister missionary helps woman to find geneology information in the computer lab">
+                </picture>
+                <h3>Salt Lake Utah Temple</h3>
+                <p>The Salt Lake City Utah Temple took 40 years to build, with its highly ornate interior being
+                    completed in just a year. It was the only temple dedicated by President Wilford Woodruff, in April
+                    1893. Positioned on Salt Lake City's center block, known as Temple Square, the spires of the Salt
+                    Lake Temple rise amid downtown high-rises and super malls. Every holiday season, Temple Square is
+                    transformed into a highly popular display of hundreds of thousands of Christmas lights. In General
+                    Conference April 2019, President Russel M Nelson announced that the Salt Lake Temple will be closing
+                    for extensive renovations.</p>
+                <form action="salt-lake-temple.html"><button>Visit Temple Page</button></form>
+            </div>
+
+            <div class="mySlides fade">
+                <picture>
+                    <source srcset="images/breakfast-small.jpg" media="(max-width: 600px)">
+                    <img src="images/breakfast-large.jpg" alt="A large parfait with fresh oats">
+                </picture>
+                <h3>Jordan River Utah Temple</h3>
+                <p>The beautiful Jordan River Utah Temple was the seventh temple built in Utah, dedicated unto the Lord
+                    in 1981. Marion G. Romney, a member of the church's First Presidency, dedicated the Jordan River
+                    Temple in fifteen sessions held during November 16-20, 1981. More than 160,000 members attended the
+                    dedicatory services. Thirty of those in attendance at the dedication were elderly men and women who
+                    had been at the historic dedication of the first temple in the Salt Lake Valley, the Salt Lake
+                    Temple.Most had been very young at the time but still remembered the event. It was closed for
+                    extensive renovations in August 2015, and rededicated three years later in May 2018 by President
+                    Henry B Eyring of the First Presidency.</p>
+                <form action="jordan-river-temple.html"><button>Visit Temple Page</button></form>
+            </div>
+
+            <div class="mySlides fade">
+                <picture>
+                    <source srcset="images/change-service-small.jpg" media="(max-width: 600px)">
+                    <img src="images/change-service-large.jpg" alt="A line of fresh clean laundry">
+                </picture>
+                <h3>Draper Utah Temple</h3>
+                <p>The Draper Utah Temple was the twelfth temple built in Utah and the third built in the Salt Lake
+                    Valley, following the Salt Lake Temple and the Jordan River Temple. It was dedicated in March 2009
+                    by Thomas S. Monson. During its two-month open house, 684,721 visitors toured the interior of the
+                    Draper Utah Temple, making it one of the most widely attended temple open houses in the Church.</p>
+                <form action="draper-temple.html"><button>Visit Temple Page</button></form>
+            </div>
+
+            <div class="mySlides fade">
+                <picture>
+                    <source srcset="x.jpg" media="(max-width: 600px)">
+                    <img src="x.jpg" alt="Temple Image coming soon">
+                </picture>
+                <h3>Tooele Valley Utah Temple</h3>
+                <p>The Tooele Valley Temple was announced in the Sunday afternoon session of General Conference, April
+                    2019, by President Russel M Nelson. Details forthcoming.</p>
+                <form action="tooele-valley-temple.html"><button>Visit Temple Page</button></form>
+            </div>
+        </div>
+        <br>
+        <div class="dotbox">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <section>
+            <a href="salt-lake-temple.html">Salt Lake Temple</a> | <a href="jordan-river-temple.html">Jordan River
+                Temple</a> | <a href="draper-temple.html">Draper Temple</a> | <a href="tooele-valley-temple.html">Tooele Valley Temple</a>
+        </section>
     </main>
     <footer>
         &copy;2019 Temple Inn & Suites | <a href="contact.html">Contact Us</a> | <a href="policies.html">Guest

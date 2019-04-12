@@ -117,6 +117,12 @@ nav li {
    list-style: none;
 }
 
+ul li {
+   max-width: 800px;
+   margin: 0 auto;
+   line-height: 1.5em;
+}
+
 section {
    text-align: left;
    padding: 10px;
@@ -132,7 +138,7 @@ section {
     margin-bottom: 25px;
  }
 
-.featured-temple {
+.featured {
    margin: 25px auto;
    border-radius: 8px;
     }
@@ -163,6 +169,7 @@ button {
    border: none;
    width: 150px;
    height: 50px;
+   padding: 10px;
 }
 
 .parallax button {
@@ -351,6 +358,19 @@ button {
    background-color: #D8D0C1;
    padding: 25px;
    border-radius: 8px;
+   margin-bottom: 25px;
+}
+
+.contact-form button {
+   margin-top: 25px;
+}
+
+.contact-form p, label {
+   font-weight: bold;
+}
+
+.form-meat label {
+   font-weight: normal;
 }
 
 .form-shell li, .form-meat {
@@ -374,13 +394,22 @@ button {
    padding: 8px 16px;
  }
 
- .form-meat li {
-   flex: 1 100px;
+ .form-meat li, .form-skin li {
    margin: 5px;
+   flex: 1 100px;
  }
 
- .form-meat {
+ .form-meat, .form-skin li {
    justify-content: space-between;
+ }
+
+ .form-skin li {
+    width: 50px;
+    display: inline;
+ }
+
+ .form-skin label {
+   font-weight: normal;
  }
 
  #contact-us-form {
@@ -389,6 +418,11 @@ button {
 
  #contact-us-map {
  grid-column-start: 1;
+ }
+
+ iframe {
+   width: 100%;
+   height: 90%;
  }
 
 footer {
