@@ -5,26 +5,37 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
-    var templeData = request.response;
-    templeSaltLake(templeData);
+  var templeData = request.response;
+  templeSaltLake(templeData);
 }
 
 //* Function to write temple data onto page; loop through JSON to find town name, then write header and events in townEventsPreston article.
 
 function templeSaltLake(jsonObj) {
-    var temples = jsonObj['temples']
-    var i = 0;
-    var name = temples[i].name;
+  var temples = jsonObj['temples']
+  var i = 0;
+  var name = temples[i].name;
 
-    for (i = 0; i < temples.length; i++) {
-        var name = temples[i].name;
-        if (name == "Salt Lake") {
-            var phone = temples[i].phoneNumber;
-            document.getElementById("phone").innerHTML = phone;
-            var address = temples[i].streetAddress + ", " + temples[i].cityState + " " + temples[i].zip;
-            document.getElementById("address").innerHTML = address;
-        }
+  for (i = 0; i < temples.length; i++) {
+    var name = temples[i].name;
+    if (name == "Salt Lake") {
+      var phone = temples[i].phoneNumber;
+      document.getElementById("phone").innerHTML = phone;
+      var address = temples[i].streetAddress + ", " + temples[i].cityState + " " + temples[i].zip;
+      document.getElementById("address").innerHTML = address;
+      var description = temples[i].description;
+      document.getElementById("description").innerHTML = description;
+      document.getElementById("services").innerHTML = "<li>" + temples[i].services[0] + "</li> <li>" + temples[i].services[1] + "</li> <li>" + temples[i].services[2] + "</li>";
+      document.getElementById("ordinances").innerHTML = "<li>" + temples[i].ordinanceSchedule[0] + "</li> <li>" + temples[i].ordinanceSchedule[1] + "</li> <li>" + temples[i].ordinanceSchedule[2] + "</li> <li>" + temples[i].ordinanceSchedule[3] + "</li>";
+
+      for (x = 0; x < temples[i].closures.length; x++) {
+        var node = document.createElement("LI");
+        var textnode = document.createTextNode(temples[i].closures[x]);
+        node.appendChild(textnode);
+        document.getElementById("closures").appendChild(node);
+      }
     }
+  }
 }
 
 //* Request Current Weather data from OpenWeatherMap

@@ -15,7 +15,7 @@
     <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/large.css">
 </head>
 
-<body>
+<body class="fade">
     <picture>
         <source srcset="images/abor-large-01.svg" media="(max-width: 600px)">
         <img class="hero-img" src="images/abor-large-02.svg" alt="A peaceful bench in the Inn Gardens">
@@ -46,16 +46,37 @@
         <section>
             <h2>Salt Lake Utah Temple</h2>
             <picture>
-                <source srcset="images/breakfast-small.jpg" media="(max-width: 600px)">
-                <img src="images/breakfast-large.jpg" alt="A view of the Salt Lake Utah Temple">
+                <picture>
+                    <source srcset="images/salt-lake-temple-small.jpg" media="(max-width: 600px)">
+                    <img src="images/salt-lake-temple-small.jpg" alt="A view of the Salt Lake Temple">
+                </picture>
             </picture>
             <ul>
                 <li><strong>Phone:</strong> <span id="phone"></span></li>
                 <li><strong>Location:</strong> <span id="address"></span></li>
-                <li><strong></strong></li>
+                <li><strong>Description:</strong> <span id="description"></span></li>
             </ul>
 
-            <h3>Current Weather</h3>
+            <div class="temple-page-bubble">
+            <h3>Services</h3>
+                <ul id="services">
+                </ul>
+            </div>
+
+            <div class="temple-page-bubble">
+            <h3>Ordinance Schedule</h3>
+                <ul id="ordinances">
+                </ul>
+            </div>
+
+            <div class="temple-page-bubble">
+                    <h3>Scheduled Closures</h3>
+                        <ul id="closures">
+                        </ul>
+                    </div>
+
+            <div class="temple-page-bubble">
+            <h4>Current Weather</h4>
             <img class="conditions-img" id="conditions-icon" src="placeholder.gif"
             alt="If this image is displayed, the javascript failed to load data from the API.">
         <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
@@ -65,6 +86,7 @@
             <p><strong>Wind Chill:</strong> <span id="windChill"></span>&deg;</p>
             <p><strong>Humidity:</strong> <span id="humid"></span>%</p>
             <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> MPH</p>
+            </div>
         </section>
 
         </div>
