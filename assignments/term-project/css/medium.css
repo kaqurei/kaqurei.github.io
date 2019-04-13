@@ -170,6 +170,33 @@ nav li:hover a {
   grid-row-end: 2;
 }
 
+section.threeColumn {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 0 25px;
+  max-width: 900px;
+}
+
+section a:hover, div a:hover {
+  color: #FFAD05;
+}
+
+#item1 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+
+#item2 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+#item3 {
+  grid-row-start: 2;
+  grid-column-start: 3;}
+
+
 footer {
   font-size: 1rem;
 }
