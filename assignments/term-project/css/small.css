@@ -93,11 +93,20 @@ header {
    background-color: #CBB8A9;
    display: flex;
    justify-content: center;
+   align-content: center;
    flex-wrap: wrap;
+}
+
+header h1 {
+   align-self: center;
 }
 
 header img {
    width: 100%;
+}
+
+.logo {
+   max-width: 150px;
 }
 
 nav {
