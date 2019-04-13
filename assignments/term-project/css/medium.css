@@ -75,7 +75,6 @@ nav {
   justify-content: center;
   flex-wrap: nowrap;
   padding: 0px;
-  margin-bottom: 25px;
 }
 
 nav a {
@@ -156,6 +155,10 @@ nav li:hover a {
 .img-wrap {
   max-width: none;
   margin: 0 auto;
+}
+
+.inner-wrap {
+  max-width: 750px;
 }
 
 .parallax {

@@ -25,7 +25,6 @@ section a:hover, .mySlides a:hover {
 
 .parallax {
   position: initial;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-large.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -33,6 +32,15 @@ section a:hover, .mySlides a:hover {
   background-size: cover;
   display: grid;
   justify-items: center;
+}
+
+.parallax1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-large.jpg");
+}
+
+
+.parallax2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-front-large.jpg");
 }
 
 .parallax button {

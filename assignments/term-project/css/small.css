@@ -20,12 +20,24 @@ img {
    display: block;
 }
 
+.welcome-wrap {
+   margin-top: 25px;
+}
+
 #welcome-image {
    display: none;
 }
 
 .text-wrap h2 {
    text-align: center;
+}
+
+.parallax-div-wrap {
+   max-width: 800px;
+   background-color: rgba(255, 255, 255, 0.5);
+   max-height: 250px;
+   padding: 25px;
+   border-radius: 50%;
 }
 
 p {
@@ -37,6 +49,7 @@ h1, h2 {
    font-family: 'Great Vibes', cursive, sans-serif;
    color: #012A36;
    font-size: 3em;
+   margin: 25px;
 }
 
 h3, h4 {
@@ -87,7 +100,7 @@ header img {
 
 nav {
    background-color: #D8D0C1;
-   margin-bottom: 10px;
+   margin-bottom: 0px;
    padding: 15px;
 }
 
@@ -142,7 +155,7 @@ section {
     margin-bottom: 25px;
  }
 
-.featured {
+.featured, .featured-portal {
    margin: 25px auto;
    border-radius: 8px;
     }
@@ -166,6 +179,18 @@ section {
    margin: 0 auto;
 }
 
+.outer-wrap {
+   background-color: #D8D0C1;
+   width: 100%;
+}
+
+.inner-wrap {
+   background-color: #CBB8A9;
+   max-width: 400px;
+   margin: 0 auto;
+   padding: 25px;
+}
+
 button {
    font-size: 1rem;
    color: #FFF;
@@ -174,13 +199,14 @@ button {
    width: 150px;
    height: 50px;
    padding: 10px;
+   margin: 25px;
 }
 
 .parallax button {
    font-size: 1.5rem;
 }
 
-.parallax form {
+.parallax form, .parallax div {
    justify-self: center;
    grid-column-start: 1;
    grid-column-end: 1;
@@ -190,7 +216,6 @@ button {
 
 .parallax {
    position: static;
-   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-small.jpg");
    height: 300px;
    background-attachment: scroll;
    background-position: center;
@@ -199,6 +224,15 @@ button {
    display: grid;
    margin: 0px;
    justify-items: center;
+ }
+
+ .parallax1 {
+   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-small.jpg");
+ }
+ 
+ 
+ .parallax2 {
+   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-front-small.jpg");
  }
 
  .spotlight {
