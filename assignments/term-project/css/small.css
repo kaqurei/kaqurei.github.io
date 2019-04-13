@@ -191,12 +191,12 @@ section {
 }
 
 .outer-wrap {
-   background-color: #D8D0C1;
+   background-color: #CBB8A9;
    width: 100%;
 }
 
 .inner-wrap {
-   background-color: #CBB8A9;
+   background-color: #D8D0C1;
    max-width: 400px;
    margin: 0 auto;
    padding: 25px;
