@@ -57,14 +57,16 @@ h3, h4 {
 }
 
 .quote {
+   padding: 5px 3rem 5px 3rem;
+}
+
+.parallax-quote, .quote {
+   font-family: 'Great Vibes', cursive, sans-serif;
+   color: #012A36;
    font-size: 1.5rem;
    font-weight: bolder;
    text-align: center;
-   padding: 5px 3rem 5px 3rem;
-   font-family: 'Great Vibes', cursive, sans-serif;
-   color: #012A36;
 }
-
 
 h1 {
    font-size: 2.5em;
@@ -233,6 +235,10 @@ button {
  
  .parallax2 {
    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-front-small.jpg");
+ }
+
+ .parallax3 {
+   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/temple-small.jpg");
  }
 
  .spotlight {

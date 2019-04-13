@@ -43,6 +43,11 @@ section a:hover, .mySlides a:hover {
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/hotel-front-large.jpg");
 }
 
+.parallax3 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("images/temple-large.jpg");
+}
+
+
 .parallax button {
   justify-self: center;
   grid-column-start: 1;
