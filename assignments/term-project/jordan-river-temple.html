@@ -30,23 +30,14 @@
         </ul>
     </nav>
     <main class="fade">
-        <section>
-            <div class="hero-text">
-                <div class="quote">
-                    &ldquo;And they pitched their tents round about the temple, every man having his tent with
-                    the door thereof towards the temple...&rdquo; - Mosiah 2:6
-                </div>
-            </div>
-        </section>
-
         <section class="threeColumn">
             <div class="bubble">
                 <h2>Jordan River Temple</h2>
-                <picture>
-                    <picture id="templeImage">
-                        Script Failed.
+                <picture id="templeImage">
+                        <source srcset="x.jpg" media="(max-width: 600px)">
+                        <img src="x.jpg" class="featured"
+                            alt="If this image is displayed, the script failed to execute properly.">
                     </picture>
-                </picture>
                 <ul>
                     <li>
                         <h3>Contact</h3>
@@ -75,11 +66,18 @@
                 </ul>
             </div>
         </section>
-        </div>
+
+        <section>
+                <div class="hero-text">
+                    <div class="quote">
+                        &ldquo;To every thing there is a season, and a time to every purpose under the heaven:...&rdquo; - Ecclesiastes 3:1
+                    </div>
+                </div>
+            </section>
 
         <div id="item4">
             <h3>Current Weather</h3> <img class="conditions-img" id="conditions-icon" src="placeholder.gif"
-                alt="If this image is displayed, the javascript failed to load data from the API."></li>
+                alt="If this image is displayed, the javascript failed to load data from the API.">
             <ul>
                 <li><strong>Currently: <span id="windTemp"></span>&deg;</strong>
                 <li><strong>Condition:</strong> <span id="current-weather"></span></li>
