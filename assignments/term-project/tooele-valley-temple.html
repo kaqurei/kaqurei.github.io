@@ -16,10 +16,6 @@
 </head>
 
 <body>
-    <picture>
-        <source srcset="images/abor-large-01.svg" media="(max-width: 600px)">
-        <img class="hero-img" src="images/abor-large-02.svg" alt="A peaceful bench in the Inn Gardens">
-    </picture>
     <header>
         <h1>Temple Inn & Suites</h1>
     </header>
@@ -43,48 +39,50 @@
             </div>
         </section>
 
-        <section>
-            <h2>Tooele Valley Utah Temple</h2>
-            <picture>
-                <picture id="templeImage">
-                    Script Failed.
+        <section class="threeColumn">
+            <div class="bubble">
+                <h2>Tooele Valley Utah Temple</h2>
+                <picture>
+                    <picture id="templeImage">
+                        Script Failed.
+                    </picture>
                 </picture>
-            </picture>
-            <ul>
-                <li><strong>Phone:</strong> <span id="phone"></span></li>
-                <li><strong>Location:</strong> <span id="address"></span></li>
-                <li><strong>Description:</strong> <span id="description"></span></li>
-            </ul>
+                <ul>
+                    <li><strong>Phone:</strong> <span id="phone"></span></li>
+                    <li><strong>Location:</strong> <span id="address"></span></li>
+                    <li><strong>Description:</strong> <span id="description"></span></li>
+                </ul>
+            </div>
 
-            <div class="temple-page-bubble">
-            <h3>Services</h3>
+            <div class="temple-page-bubble" id="item1">
+                <h3>Services</h3>
                 <ul id="services">
                 </ul>
             </div>
 
-            <div class="temple-page-bubble">
-            <h3>Ordinance Schedule</h3>
+            <div class="temple-page-bubble" id="item2">
+                <h3>Ordinance Schedule</h3>
                 <ul id="ordinances">
                 </ul>
             </div>
 
-            <div class="temple-page-bubble">
-                    <h3>Scheduled Closures</h3>
-                        <ul id="closures">
-                        </ul>
-                    </div>
+            <div class="temple-page-bubble" id="item3">
+                <h3>Scheduled Closures</h3>
+                <ul id="closures">
+                </ul>
+            </div>
 
-            <div class="temple-page-bubble">
-            <h4>Current Weather</h4>
-            <img class="conditions-img" id="conditions-icon" src="placeholder.gif"
-            alt="If this image is displayed, the javascript failed to load data from the API.">
-        <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
+            <div class="temple-page-bubble" id="item4">
+                <h4>Current Weather</h4>
+                <img class="conditions-img" id="conditions-icon" src="placeholder.gif"
+                    alt="If this image is displayed, the javascript failed to load data from the API.">
+                <div class="current"><b>Currently: <span id="windTemp"></span>&deg;</b></div>
 
-            <p><strong>Condition:</strong> <span id="current-weather"></span></p>
-            <p><strong>High:</strong> <span id="temp-high"></span>&deg;</p>
-            <p><strong>Wind Chill:</strong> <span id="windChill"></span>&deg;</p>
-            <p><strong>Humidity:</strong> <span id="humid"></span>%</p>
-            <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> MPH</p>
+                <p><strong>Condition:</strong> <span id="current-weather"></span></p>
+                <p><strong>High:</strong> <span id="temp-high"></span>&deg;</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span>&deg;</p>
+                <p><strong>Humidity:</strong> <span id="humid"></span>%</p>
+                <p><strong>Wind Speed:</strong> <span id="windSpeed"></span> MPH</p>
             </div>
         </section>
 

@@ -59,9 +59,9 @@
       "streetAddress": "TBA",
       "cityState": "TBA",
       "zip": "TBA",
-      "ordinanceSchedule": ["TBA"],
+      "ordinanceSchedule": ["Baptisms: TBA", "Initatory: TBA", "Endowments: TBA", "Sealings: TBA"],
       "services": ["Rental Clothing: TBA", "Cafeteria: TBA", "Distribution Center Nearby: TBA"],
-      "closures": ["Baptisms: TBA", "Initatory: TBA", "Endowments: TBA", "Sealings: TBA"]
+      "closures": ["TBA"]
     }
 
   ]

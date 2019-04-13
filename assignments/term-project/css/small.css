@@ -425,6 +425,48 @@ button {
    height: 90%;
  }
 
+ .temple-page-bubble {
+   max-width: 250px;
+   background-color: #D8D0C1;
+   padding: 25px;
+   margin: 25px auto;
+   border-radius: 8px;
+}
+
+.bubble {
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 1;
+}
+
+section.threeColumn {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto auto;
+   grid-gap: 25px;
+   max-width: 900px;
+}
+
+#item1 {
+   grid-row-start: 2;
+   grid-column-start: 1;
+}
+
+#item2 {
+   grid-row-start: 2;
+   grid-column-start: 2;
+}
+
+#item3 {
+   grid-row-start: 2;
+   grid-column-start: 3;}
+
+#item4 {
+   grid-row-start: 1;
+   grid-column-start: 3;
+   grid-column-end: 3;
+}
+
 footer {
    background-color: #CAD5CA;
    color: #012A36;
