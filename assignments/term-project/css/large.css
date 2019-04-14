@@ -16,6 +16,10 @@ section {
   max-width: 900px;
 }
 
+.inner-wrap {
+  max-width: 800px;
+}
+
 .two-column {
   display: grid;
   grid-template-columns: 5fr 5fr;
